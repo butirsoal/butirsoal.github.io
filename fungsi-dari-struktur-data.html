@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Struktur Data - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Struktur Data, , , , , , , 0, , , , , , 0, fungsi-dari-struktur-data, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Struktur Data - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Struktur Data, , , , , , , 0, , , , , , 0, fungsi-dari-struktur-data, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Struktur Data - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Struktur Data, , , , , , , 0, , , , , , 0, fungsi-dari-struktur-data, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://butirsoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://butirsoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://butirsoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://butirsoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://butirsoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://butirsoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://butirsoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://butirsoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://butirsoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://butirsoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Struktur Data</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Lucifer09</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Struktur+Data" alt="Fungsi Dari Struktur Data">
+                    </div>
+                    <p></p>
+                    <p>Apa fungsi dari Queue dalam Struktur Data? Dan mengapa menggunakan queue sedangkan kita bisa menggunakan Array? </p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-queue-dalam-struktur-data-dan-mengapa-menggunakan-queue-sedangkan-kita-bisa-menggunakan-array">1.
+                                            Apa fungsi dari Queue dalam Struktur Data? Dan mengapa menggunakan queue sedangkan kita bisa menggunakan Array? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#array-adalah-a-tipe-data-terstruktur-yang-terdiri-dari-sejumlah-komponen-komponen-yang-mempunyai-variabel-yang-sama-b-tipe-data-terstruktur-yang-terdiri-dari-sejumlah-komponen-komponen-yang">2.
+                                            Array adalah........ a. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai variabel yang sama; b. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai fungsi yang sama; c. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai tipe yang sama.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-kontrol-data-2-gerakan-data-3-%c2%a0kolaborasi-data%c2%a0-4-pengolahan-data-5-penyimpanan-data-dari-data-tersebut-manapakah-yang-bukan-merupakan-fungsi-dari-struktur-organisasi-komputer-itu">3.
+                                            1. kontrol data 2. Gerakan data 3. kolaborasi data  4. pengolahan data 5. penyimpanan data Dari data tersebut, manapakah yang bukan merupakan fungsi dari struktur organisasi komputer itu ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#30-berikut-ini-ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-%e2%80%a6-a-d-b-e-c">4.
+                                            30.	Berikut ini ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah …. a.	  					d.    b.	 					e.    c.	 </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-struktur-teks-formulir2-data-apa-saja-yang-terdapat-dalam-formulir-pengiriman-barang3-untuk-apa-biasanya-formulir-digunakan4-apa-keuntungan-penggunaan-formulir5-apa-fungsi-dari-formuli">5.
+                                            1.Jelaskan struktur teks formulir??2.data apa saja yang terdapat dalam formulir pengiriman barang??3.untuk apa biasanya formulir digunakan4.Apa keuntungan penggunaan formulir?5.Apa fungsi dari formulir​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-%e2%80%a6-a-tableb-table-designc-query-designd-blank-forme-report-design">6.
+                                            ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah ….a.tableb.table designc.query designd.blank forme.report design</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-data-dibawah-ini-1-pengganti-sel-tubuh-yang-rusak-2-meningkatkan-daya-tahan-tubuh-3-pembentukan-struktur-tulang-4-pembangun-tubuh-5-sumber-energi-terbesar-fungsi-protein-ditunjukkan">7.
+                                            perhatikan data dibawah ini 1) pengganti sel tubuh yang rusak 2) meningkatkan daya tahan tubuh 3 ) pembentukan struktur tulang 4) pembangun tubuh 5 ) sumber energi terbesar fungsi protein ,ditunjukkan oleh data nomer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#upaya-mengatasi-masalah-pengangguran-dapatdilakukan-melalui-pendekatan-terhadap-struktur-dankultur-masyarakat-setempat-dalam-hal-ini-ilmusosiologi-berfungsi-membantu-memberikan-dataakurat-kepada-peme">8.
+                                            Upaya mengatasi masalah pengangguran dapatdilakukan melalui pendekatan terhadap struktur dankultur masyarakat setempat. Dalam hal ini ilmusosiologi berfungsi membantu memberikan dataakurat kepada pemerintah sebagai lembaga yangbertanggung jawab mengatasi masalah tersebut.Dengan demikian, sosiolog berperan ....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-%e2%80%a6-a-tableb-table-designc-query-designd-blank-forme-report-design">9.
+                                            ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah ….a.tableb.table designc.query designd.blank forme.report design</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-struktur-dan-fungsi-serta-beri-contoh-sistem-kode-data-berikuta-pengkodean-2b1q-b-kode-blok-block-coding-c-kode-ascii">10.
+                                            Jelaskan struktur dan fungsi serta beri contoh sistem kode data berikut:
+a.  Pengkodean 2B1Q 
+b.  Kode Blok (Block Coding) 
+c.  Kode ASCII </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penyelesaian-masalah-kemiskinan-harus-didasarkan-pada-pemahaman-dan-pengkajian-mengenai-struktur-dan-kultur-masyarakat-dalam-hal-ini-fungsi-sosiologi-seperti-memberikan-data-yang-akurat-kepada-para">11.
+                                            Penyelesaian masalah kemiskinan harus didasarkan pada pemahaman dan pengkajian mengenai struktur dan kultur masyarakat.  Dalam hal ini, fungsi sosiologi seperti memberikan data yang akurat kepada para pengambil kebijakan, berguna untuk ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-a-tableb-query-designc-report-designd-table-designe-blank-form">12.
+                                            ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah A.tableB.query designC.report designD.table designE.blank form</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menulis-teks-ulasan-diperlukan-data-databerupa-informasi-penting-mengenai-objekulasan-yang-berfungsi-sebagai-a-pelengkap-struktur-teks-ulasanb-penanda-ciri-kebahasaan-teks-ulasaninti-dari-teks-u">13.
+                                            Menulis teks ulasan diperlukan data-databerupa informasi penting mengenai objekulasan yang berfungsi sebagai ....a. pelengkap struktur teks ulasanb. penanda ciri kebahasaan teks ulasaninti dari teks ulasan yang ditulisd. pendukung hasil interpretasi penulisC.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-menulis-teks-ulasan-diperlukan-data-data-berupa-informasi-penting-mengenai-objek-ulasan-yg-berfungsi-sebagai-a-pelengkap-struktur-teks-ulasanbpenanda-ciri-kebahasaan-teks-ulasancinti-dari-te">14.
+                                            dalam menulis teks ulasan diperlukan data data berupa informasi penting mengenai objek ulasan yg berfungsi sebagai..a) pelengkap struktur teks ulasanb)penanda ciri kebahasaan teks ulasanc)inti dari teks ulasan yg ditulisd) pendukung hasil interpretasi penulis​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jembatan-old-london-dibangun-pada-abad-ke-a-9-b-12c-7d-102-data-yang-diperlukan-untuk-perencanaan-jembatan-adalah-a-lokasifungsibahan-strukturgelagarb-lokasi-fungsirangka-baja-s">15.
+                                            1. Jembatan old London dibangun pada abad ke.....a. 9 b. 12c. 7d. 102. Data yang diperlukan untuk perencanaan jembatan adalah....a. Lokasi,fungsi,bahan, struktur,Gelagarb. lokasi fungsi,rangka baja, struktur peraturanc. lokasi,fungsi,cable stayed, strukturd. lokasi, fungsi,bahan, struktur peraturan3. Yang termasuk Struktur bawah jembatan adalah kecualia. abutment,pondasi,daya dukung tiangb. abutment,pondasi,daya dukung tiang penahanc. arch bridge,pondasi,daya dukung tiang pancangd. Unsur perkerasan,daya dukung tiang penahan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-fungsi-utama-komputer-sistem-komputer-dan-struktur-data-cpu">16.
+                                            Jelaskan perbedaan Fungsi utama komputer, sistem komputer dan struktur data cpu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-data-keruangan-menggunakan-struktur-titikgaris-dan-area2-istilah-manajemen-dalam-komponen-sig3-analisis-data-spasial-yang-akan-membentuk-data-spasial-baru-yang-terbentuk-poligonarea4-perangkat">17.
+                                            1. data keruangan menggunakan struktur titik,garis Dan area2. istilah manajemen dalam komponen SIG3. analisis data spasial yang akan membentuk data spasial Baru yang terbentuk poligon/area4. perangkat keras SIG yang berfungsi untuk mencetak data5. proses pemasukan data atribut melalui pembuatan label6. perangkat keras SiG yang berfungsi untuk menyimpan data7. contoh data spasial</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-data-mengenai-batang-tumbuhan-yang-struktur-dan-fungsinya-telah-termodifikasi-nama-tumbuhan-fungsi-tumbuhan-informasi-yang-di-peroleh">18.
+                                            carilah data mengenai batang tumbuhan yang struktur dan fungsinya telah termodifikasi. nama tumbuhan, fungsi tumbuhan, informasi yang di peroleh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penyelesaian-masalah-kemiskinan-harus-di-dasarkan-pada-pemahaman-dan-pengkajian-mengenai-struktur-dan-kultur-masyarakat-dalam-hal-inifungsi-sosiologi-seperti-memeberikan-data-yang-akurat-kepada-para">19.
+                                            penyelesaian masalah kemiskinan harus di dasarkan pada pemahaman dan pengkajian mengenai struktur dan kultur masyarakat.Dalam hal ini,fungsi sosiologi seperti memeberikan data yang akurat kepada para pengambil kebijakan,berguna untuk?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-struktur-data-dalam-hal-kalam-penyimpanan-data-bantu-jawab-yaaaah-tulung-entar-tf-50k-dehhh">20.
+                                            Apakah fungsi struktur data dalam hal Kalam penyimpanan data     
+BANTU JAWAB YAAAAH TULUNG ENTAR TF 50K dehhh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-berfungsi-dalam-pergerakan2-bekerja-dibawah-kesadaran-kita3-memiliki-struktur-gelap-terangdata-tersebut-merupakan-ciri-ciri-otot-a-polosb-bisepc-lurikd-jantung">21.
+                                            1). berfungsi dalam pergerakan2). bekerja dibawah kesadaran kita3). memiliki struktur gelap terangdata tersebut merupakan ciri - ciri otot...a. polosb. bisepc. lurikd. jantung</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kamus-data-data-dictionary-adalah-komponen-system-manajemen-basis-data-yg-berfungsi-untuk-a-menyimpan-program-aplikasi-b-menyimpan-file-basis-data-c-menyimpan-basis-datanya-sendiri-d-menyi">22.
+                                            Kamus data (data dictionary) adalah komponen system manajemen basis data yg berfungsi untuk ?
+A. Menyimpan program aplikasi.
+B . Menyimpan file basis data.
+C. Menyimpan basis datanya sendiri.
+D. Menyimpan metadata tentang struktur data dan skema basis data.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tipe-data-statik-hanya-bisa-dideklarasikan-pada-akhir-eksekusi-awal-fungsi-awal-struktur-pertengahan-run%e2%80%8b">23.
+                                            Tipe data statik hanya bisa dideklarasikan pada... Akhir eksekusi Awal fungsi Awal struktur Pertengahan RUN​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tipe-data-dasar-sebagai-jenis-tipe-data-primitive-tidak-terstruktur-yang-didefinisikan-oleh-a-bahasa-pemrograman-b-fungsi-dan-prosedur-c-programmer-yang-bersangkutan-d-sesuai-permintaan-user">24.
+                                            tipe data dasar sebagai jenis tipe data primitive tidak terstruktur yang didefinisikan oleh.. a. bahasa pemrograman b. fungsi dan prosedur c. programmer yang bersangkutan d. sesuai permintaan user​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-data-berikut-1-penyebaran-proses-spawn-proccess-2-display-fungsi-fungsi-waktu-3-inisialisasi-dan-collection-4-display-input-terstruktur-berdasarkan-data-di-atas-program-master-b">25.
+                                            Perhatikan data berikut! (1) Penyebaran proses (spawn proccess) (2) Display fungsi-fungsi waktu (3) Inisialisasi dan collection (4) Display input terstruktur Berdasarkan data di atas, program master bertugas dalam ... a. (1) dan (3) b. (2) dan (4) c. (1), (2), dan (3) d. (2), (3), dan (4)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-data-berikut1-penyebaran-proses-spawn-proccess2-display-fungsi-fungsi-waktu3-inisialisasi-dan-collection4-display-input-terstrukturberdasarkan-data-di-atas-program-master-b">26.
+                                            Perhatikan data berikut!
+(1) Penyebaran proses (spawn proccess)
+(2) Display fungsi-fungsi waktu
+(3) Inisialisasi dan collection
+(4) Display input terstruktur
+Berdasarkan data di atas, program master bertugas dalam ...
+a. (1) dan (3)
+b. (2) dan (4) 
+c. (1), (2), dan (3)
+d. (2), (3), dan (4)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kelebihan-menggunakan-struktur-data-stuck-adalaha-mengizinkan-perubahan-ukuran-variabelb-kemungkinan-stack-overflowc-mudah-rusak-d-akses-acak-tidak-dimungkinkane-manajemen-fungsi-yang-efisien">27.
+                                            kelebihan menggunakan struktur data stuck adalaha. mengizinkan perubahan ukuran variabelb. kemungkinan stack overflowc. mudah rusak d. akses acak tidak dimungkinkane. manajemen fungsi yang efisien ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#18-materi-yang-dibahas-pada-elemen-dampak-sosial-informatika-dsi-adalah-a-fungsi-algoritma-representasi-data-dan-struktur-data-b-pengelolaan-data-pencarian-data-peringkasan-data-dan-vi">28.
+                                            18. Materi yang dibahas pada elemen Dampak Sosial Informatika (DSI) adalah **** a. fungsi, algoritma, representasi data, dan struktur data b. pengelolaan data, pencarian data, peringkasan data, dan visualisasi data c. media sosial, cyberbullying, dan pengkajian informasi secara kritis d. pemrograman menggunakan dua bahasa pemrograman visual​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-struktur-teks-formulir2-data-apa-saja-yang-dapat-dalam-formulir-pengiriman-barang3-untuk-apa-biasanya-formulir-digunakan4-apa-keuntungan-penggunaan-formulir-5-apakah-fungsi-dari-fo">29.
+                                            1. Jelaskan struktur teks formulir!2. Data apa saja yang dapat dalam formulir pengiriman barang?3. Untuk apa biasanya formulir digunakan?4. Apa keuntungan penggunaan formulir ?5. Apakah fungsi dari formulir?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kamus-data-data-dictionary-adalah-komponen-system-manajemen-basis-data-yg-berfungsi-untuka-%c2%a0menyimpan-metadata-tentang-struktur-data-dan-skema-basis-datab-%c2%a0menyimpan-file-basis-datac">30.
+                                            Kamus data (data dictionary) adalah komponen system manajemen basis data yg berfungsi untuk:a. Menyimpan metadata tentang struktur data dan skema basis datab. Menyimpan file basis datac. Menyimpan program aplikasid. Menyimpan berkase. Menyimpan basis datanya sendiri​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-lah-5-buah-soal-untuk-algoritmaflowcharttipe-datasejarah-pascal5-buah-soal-untuk-struktur-dasar-bahasa-dasar5-buah-soal-untuk-struktur-kembali-aliran5-buah-soal-untuk-struktur-perulangan5-buah">31.
+                                            buat lah 5 buah soal untuk algoritma,flowchart,tipe data,sejarah pascal5 buah soal untuk struktur dasar bahasa dasar5 buah soal untuk struktur kembali aliran5 buah soal untuk struktur perulangan5 buah soal untuk prosedur dan fungsidengan kunci jawaban masing-masingmohon bantuannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#analisislah-dengan-memperhatikan-kaidah-dan-struktur-teks-laporan-hasil-observasi1-apakah-hasil-analisismu-mempunyai-kelebihan-jelaskan2-apakah-fungsi-data-dalam-laporan-hasil-observasitolong-ba">32.
+                                            Analisislah dengan memperhatikan kaidah dan struktur teks laporan hasil observasi!1. apakah hasil analisismu mempunyai kelebihan? jelaskan!2. apakah fungsi data dalam laporan hasil observasi?tolong bantu,,,,jawab cepat....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#37-disajikan-data-tentang-struktur-sel-jaringan-dan-fungsi-jaringan-sebagai-berikutdi-gambarhubungan-yang-tepat-antara-struktur-sel-jaringan-dan-fungsi-jaringan-ditunjukkan-oleh-a-124b">33.
+                                            37. Disajikan  data tentang struktur sel jaringan dan fungsi jaringan sebagai berikut:
+(Di gambar)
+Hubungan yang tepat antara struktur sel jaringan dan fungsi jaringan ditunjukkan oleh...
+A. 1,2,4
+B. 1,3,5
+C. 2,3,5
+D. 2,4,5</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-data-mengenai-batang-tumbuhan-yang-struktur-dan-fungsinya-telah-termodifikasi-nama-tumbuhan-fungsi-tumbuhan-informasi-yang-di-peroleh">34.
+                                            carilah data mengenai batang tumbuhan yang struktur dan fungsinya telah termodifikasi. nama tumbuhan, fungsi tumbuhan, informasi yang di peroleh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berfungsi-dalam-pergerakan-2-bekerja-di-bawah-kesadaran-kita-3-memiliki-struktur-gelap-dan-terang-data-tersebut-merupaka-ciri-ciri-otot-%e2%80%a6">35.
+                                            berfungsi dalam pergerakan 2) bekerja di bawah kesadaran kita 3) memiliki struktur gelap dan terang. Data tersebut merupaka ciri-ciri otot …. *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-mengenai-batang-tumbuhan-yang-struktur-dan-fungsinya-telah-termodifikasinama-tumbuhanfungsi-tambahandan-informasitolong-ya">36.
+                                            Data mengenai batang tumbuhan yang struktur dan fungsinya telah termodifikasi,nama tumbuhan,fungsi tambahan,dan informasi
+Tolong ya..</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-proses-perbaikan-data-spasial-karena-kesalahan-saat-digitasi2-perangkat-keras-sig-yang-berfungsi-sebagai-alat-memasukkan-data-3-memberikan-nilai-koordinat-lintang-dan-bujur4-proses-pengubahan-da">37.
+                                            1. proses perbaikan data spasial karena kesalahan Saat digitasi2. perangkat keras SIG yang berfungsi sebagai alat memasukkan data 3. memberikan nilai koordinat lintang dan bujur4. proses Pengubahan data geografi menjadi data raster5. data keruangan dalam struktur matriks atau pixel6. sistem berbasis komputer untuk menyimpan data geografi7. contoh data atribut8. proses pengubahan data raster menjadi data vektor9. perangkat keras SIG yang berfungsi untuk  memperOSes data10.subsistem SIG yang memperoses semUA kegiatan penanganan data11. instansi yang menyediakan data statistik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#akar-yang-mengalami-modifikasi-struktur-dan-fungsinya-sehingga-memiliki-fungsi-tambahan-bagi-tumbuhan-isi-data-berikut-menurut-diatasnama-tumbuhanbentukstruktur-akarfungsi-modifikasi-akarthx">38.
+                                            Akar yang mengalami modifikasi struktur dan fungsinya sehingga memiliki fungsi tambahan bagi tumbuhan.
+Isi data berikut menurut diatas:
+Nama tumbuhan:
+Bentuk/struktur akar:
+Fungsi modifikasi akar:
+Thx yg sdh mau bantu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-struktur-teks-formulir2-data-apa-saja-yang-terdapat-dalam-formulir-pengiriman-barang3-untuk-apa-biasanya-formulir-digunakan4-apa-keuntungan-penggunaan-formulir5-apakah-fungsi-dari-formu">39.
+                                            1.jelaskan struktur teks formulir!2.data apa saja yang terdapat dalam formulir pengiriman barang?3.untuk apa biasanya formulir digunakan?4.apa keuntungan penggunaan formulir?5.apakah fungsi dari formulir?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#akar-yang-mengalami-modifikasi-struktur-dan-fungsinya-sehingga-memiliki-fungsi-tambahan-bagi-tumbuhan-isi-data-berikut-menurut-diatasnama-tumbuhanbentukstruktur-akarfungsi-modifikasi-akarthx">40.
+                                            Akar yang mengalami modifikasi struktur dan fungsinya sehingga memiliki fungsi tambahan bagi tumbuhan.
+Isi data berikut menurut diatas:
+Nama tumbuhan:
+Bentuk/struktur akar:
+Fungsi modifikasi akar:
+Thx yg sdh mau bantu</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-queue-dalam-struktur-data-dan-mengapa-menggunakan-queue-sedangkan-kita-bisa-menggunakan-array">
+                            1. Apa fungsi dari Queue dalam Struktur Data? Dan mengapa menggunakan queue sedangkan kita bisa menggunakan Array? </h2><br />
+                        <p>Jawaban:</p><p></p><p>Queue dapat diartikan sebagai antrian. Seperti halnya seseorang yang mengantri membeli sesuatu. Yang datang lebih awal akan dilayani terlebih dahulu, yang baru datang akan mengantri. Mengapa tidak menggunakan array ?? Tergantung penggunaan dari datanya.</p><p></p><p>Penjelasan :</p><p>Permasalahan pada array jika digunakan sebagai sistem antrian :</p><p>Array = [ 1,2,3,4,5,6,7,8 ]</p><p></p><p>Jika array tersebut di digunakan sampai pada data ke 3. Apa yang akan terjadi jika ada data ke 9 dimasukan ke dalam array. Data ter sebut akan di masukan ke Mana ??</p><p>Array = [ 0,0,0,4,5,6,7,8 ].. data ke 9 ??</p><p></p><p>Dengan permasalahan tersebut bisa diselesaikan dengan Queue. Penggunaan array seperti di atas dan queue sangat berbeda. </p><p></p><p>Queue digunakan seperti halnya antrian jika antrian pertama sudah di jalankan maka antrian tersebut akan di hapus dan ganti antrian berikutnya.</p><p></p><p>Array berbeda dengan queue. Jika semisal kita gunakan array pada index 0 nilai pada array akan tetap.</p><p></p><p>Semoga membantu.. </p><br />
+                                            <h2 class="ez-toc-section" id="array-adalah-a-tipe-data-terstruktur-yang-terdiri-dari-sejumlah-komponen-komponen-yang-mempunyai-variabel-yang-sama-b-tipe-data-terstruktur-yang-terdiri-dari-sejumlah-komponen-komponen-yang">
+                            2. Array adalah........ a. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai variabel yang sama; b. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai fungsi yang sama; c. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai tipe yang sama.</h2><br />
+                        ~Tik<p><strong>Jawaban:</strong></p><p>c. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai tipe yang sama.</p><p><strong>Penjelasan:</strong></p> karna Array adalah. Tipe data terstruktur yang terdiri dari sejumlah komponen-komponen yang mempunyai tipe yang sama.<strong>Detail</strong><strong> </strong><strong>jawaban</strong><p><strong>mapel</strong><strong>:</strong><strong>tik</strong></p><p><strong>materi</strong><strong>:</strong><strong>Array</strong></p><p><strong>#</strong><strong>S</strong><strong>e</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>membantu</strong></p><p><strong>#</strong><strong>R</strong><strong>k</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-kontrol-data-2-gerakan-data-3-%c2%a0kolaborasi-data%c2%a0-4-pengolahan-data-5-penyimpanan-data-dari-data-tersebut-manapakah-yang-bukan-merupakan-fungsi-dari-struktur-organisasi-komputer-itu">
+                            3. 1. kontrol data 2. Gerakan data 3. kolaborasi data  4. pengolahan data 5. penyimpanan data Dari data tersebut, manapakah yang bukan merupakan fungsi dari struktur organisasi komputer itu ?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Kontrol daya memungkinkan pelihat laporan mengubah set data yang digunakan oleh jenis sumber data tertentu. Untuk memahami cara kerjanya, sebaiknya tinjau kembali perilaku laporan tanpa kontrol data.</p><p>2. Saat deteksi data gerakan aktif, Windows akan mengumpulkan aktivitas gerakan perangkat. Lalu, saat Anda ingin pedometer menghitung jumlah langkah yang Anda ambil, atau aplikasi kebugaran untuk memperkirakan berapa banyak kalori yang dibakar, sudah siap: ini memberi Anda info di waktu yang tepat.</p><p>3. Kementerian Pendayagunaan Aparatur Negara dan Reformasi Birokrasi (PANRB) melalui unit kerja Biro Data, Komunikasi, dan Informasi Publik menyelenggarakan Diskusi Kolaborasi Data bersama paguyuban PANRB di Jakarta, Selasa (12/07).</p><p>4. Total penjualan yang diperoleh selama tiga bulan terakhir.</p><p>Performa tiap anggota tim setiap bulannya.</p><p>Anggota tim yang berhasil mencatat angka penjualan tertinggi.</p><p>Rata-rata penjualan per bulannya.</p><p>5. -</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="30-berikut-ini-ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-%e2%80%a6-a-d-b-e-c">
+                            4. 30.	Berikut ini ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah …. a.	  					d.    b.	 					e.    c.	 </h2><br />
+                        ngak ada gambar tak bisa jawab<br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-struktur-teks-formulir2-data-apa-saja-yang-terdapat-dalam-formulir-pengiriman-barang3-untuk-apa-biasanya-formulir-digunakan4-apa-keuntungan-penggunaan-formulir5-apa-fungsi-dari-formuli">
+                            5. 1.Jelaskan struktur teks formulir??2.data apa saja yang terdapat dalam formulir pengiriman barang??3.untuk apa biasanya formulir digunakan4.Apa keuntungan penggunaan formulir?5.Apa fungsi dari formulir​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.........</p><p>2........</p><p>3........</p><p>4........5</p><p></p><p></p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-%e2%80%a6-a-tableb-table-designc-query-designd-blank-forme-report-design">
+                            6. ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah ….a.tableb.table designc.query designd.blank forme.report design</h2><br />
+                        <strong>[jawaban]<br /></strong><strong><br />Mata Pelajaran: Teknologi Informatika<br /></strong><strong>Kata kunci: Struktur Field, Tipe Data<br /></strong><strong><br />• Jawaban pendek:<br /><br /></strong>Ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah ….<br /><br /><strong>Table Design</strong><br /><strong><br />• Penjelasan:<br /><br />Table Design<br /></strong>adalah fasilitas yang digunakan untuk mengubah tipe data dan struktur field pada tabel <br />
+                                            <h2 class="ez-toc-section" id="perhatikan-data-dibawah-ini-1-pengganti-sel-tubuh-yang-rusak-2-meningkatkan-daya-tahan-tubuh-3-pembentukan-struktur-tulang-4-pembangun-tubuh-5-sumber-energi-terbesar-fungsi-protein-ditunjukkan">
+                            7. perhatikan data dibawah ini 1) pengganti sel tubuh yang rusak 2) meningkatkan daya tahan tubuh 3 ) pembentukan struktur tulang 4) pembangun tubuh 5 ) sumber energi terbesar fungsi protein ,ditunjukkan oleh data nomer</h2><br />
+                        1) pengganti sel tubuh yg rusakjawabannya yaitu nomer 1<br />
+                                            <h2 class="ez-toc-section" id="upaya-mengatasi-masalah-pengangguran-dapatdilakukan-melalui-pendekatan-terhadap-struktur-dankultur-masyarakat-setempat-dalam-hal-ini-ilmusosiologi-berfungsi-membantu-memberikan-dataakurat-kepada-peme">
+                            8. Upaya mengatasi masalah pengangguran dapatdilakukan melalui pendekatan terhadap struktur dankultur masyarakat setempat. Dalam hal ini ilmusosiologi berfungsi membantu memberikan dataakurat kepada pemerintah sebagai lembaga yangbertanggung jawab mengatasi masalah tersebut.Dengan demikian, sosiolog berperan ....​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>ilmu yang mempelajari individu, kelompok dan instusi yang membentuk masyarakat manusia</p><br />
+                                            <h2 class="ez-toc-section" id="ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-%e2%80%a6-a-tableb-table-designc-query-designd-blank-forme-report-design">
+                            9. ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah ….a.tableb.table designc.query designd.blank forme.report design</h2><br />
+                        <strong>[jawaban]</strong><br /><br /><strong>Mata Pelajaran: Teknologi Informatika</strong><br /><strong>Kata kunci: Struktur Field, Tipe Data</strong><br /><br /><strong>• Jawaban pendek:</strong><br /><br />Ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah ….<br /><br /><strong>Table Design</strong><br /><br /><strong>• Penjelasan:</strong><br /><br /><strong>Table Design</strong><br />adalah fasilitas yang digunakan untuk mengubah tipe data dan struktur field pada tabel B. Table field.. Maaf jika jawabannya salah<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-struktur-dan-fungsi-serta-beri-contoh-sistem-kode-data-berikuta-pengkodean-2b1q-b-kode-blok-block-coding-c-kode-ascii">
+                            10. Jelaskan struktur dan fungsi serta beri contoh sistem kode data berikut:
+a.  Pengkodean 2B1Q 
+b.  Kode Blok (Block Coding) 
+c.  Kode ASCII </h2><br />
+                        c. fungsi kode ASCII adalah mewakili karakter-karakter angka maupun huruf di dalam komputer.<br />maaf cuma tau yang ini<br />
+                                            <h2 class="ez-toc-section" id="penyelesaian-masalah-kemiskinan-harus-didasarkan-pada-pemahaman-dan-pengkajian-mengenai-struktur-dan-kultur-masyarakat-dalam-hal-ini-fungsi-sosiologi-seperti-memberikan-data-yang-akurat-kepada-para">
+                            11. Penyelesaian masalah kemiskinan harus didasarkan pada pemahaman dan pengkajian mengenai struktur dan kultur masyarakat.  Dalam hal ini, fungsi sosiologi seperti memberikan data yang akurat kepada para pengambil kebijakan, berguna untuk ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>barguna untuk memudahkan dalam menentukan masyarakat mana yang membutuhkan bantuan agar terhindar dari masalah kemiskinan</p><p></p><p></p><p></p><p></p><p>maaf kalo salah </p><br />
+                                            <h2 class="ez-toc-section" id="ikon-yang-memiliki-fungsi-untuk-membuat-struktur-field-berikut-tipe-datanya-adalah-a-tableb-query-designc-report-designd-table-designe-blank-form">
+                            12. ikon yang memiliki fungsi untuk membuat struktur field berikut tipe datanya adalah A.tableB.query designC.report designD.table designE.blank form</h2><br />
+                        Kalau gak salah sih <br />A.table<br />Maaf kalau salahjawabannya d. table design      <br />
+                                            <h2 class="ez-toc-section" id="menulis-teks-ulasan-diperlukan-data-databerupa-informasi-penting-mengenai-objekulasan-yang-berfungsi-sebagai-a-pelengkap-struktur-teks-ulasanb-penanda-ciri-kebahasaan-teks-ulasaninti-dari-teks-u">
+                            13. Menulis teks ulasan diperlukan data-databerupa informasi penting mengenai objekulasan yang berfungsi sebagai ....a. pelengkap struktur teks ulasanb. penanda ciri kebahasaan teks ulasaninti dari teks ulasan yang ditulisd. pendukung hasil interpretasi penulisC.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. pelengkap struktur teks ulasan</p><p><strong>Penjelasan:</strong></p><p>*semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="dalam-menulis-teks-ulasan-diperlukan-data-data-berupa-informasi-penting-mengenai-objek-ulasan-yg-berfungsi-sebagai-a-pelengkap-struktur-teks-ulasanbpenanda-ciri-kebahasaan-teks-ulasancinti-dari-te">
+                            14. dalam menulis teks ulasan diperlukan data data berupa informasi penting mengenai objek ulasan yg berfungsi sebagai..a) pelengkap struktur teks ulasanb)penanda ciri kebahasaan teks ulasanc)inti dari teks ulasan yg ditulisd) pendukung hasil interpretasi penulis​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D</p><p><strong>Penjelasan:</strong></p><p>pendukung hasil interpretasi penulis </p><p></p><p><strong>Jawaban:</strong></p><p>1.d.pendukung hasil interpretasi penulis</p><p><strong>Penjelasan:</strong></p><p>itu dibuat agar pembaca lebih mempercayainya dan teks dianggap berkualitas</p><p></p><p>maaf kalo salah gk usah dihapus ya</p><br />
+                                            <h2 class="ez-toc-section" id="1-jembatan-old-london-dibangun-pada-abad-ke-a-9-b-12c-7d-102-data-yang-diperlukan-untuk-perencanaan-jembatan-adalah-a-lokasifungsibahan-strukturgelagarb-lokasi-fungsirangka-baja-s">
+                            15. 1. Jembatan old London dibangun pada abad ke.....a. 9 b. 12c. 7d. 102. Data yang diperlukan untuk perencanaan jembatan adalah....a. Lokasi,fungsi,bahan, struktur,Gelagarb. lokasi fungsi,rangka baja, struktur peraturanc. lokasi,fungsi,cable stayed, strukturd. lokasi, fungsi,bahan, struktur peraturan3. Yang termasuk Struktur bawah jembatan adalah kecualia. abutment,pondasi,daya dukung tiangb. abutment,pondasi,daya dukung tiang penahanc. arch bridge,pondasi,daya dukung tiang pancangd. Unsur perkerasan,daya dukung tiang penahan​</h2><br />
+                        <p>2. jawabannya b..........</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-fungsi-utama-komputer-sistem-komputer-dan-struktur-data-cpu">
+                            16. Jelaskan perbedaan Fungsi utama komputer, sistem komputer dan struktur data cpu</h2><br />
+                        <p>Jawaban: Fungsi utama komputer yaitu mengelola data untuk membantu pekerjaan manusia. Sistem komputer berfungsi mengendalikan jalannya program aplikasi, dan struktur data pada cpu yaitu berfungsi sebagi tempat data dikelola agar data dapat diproses dengan baik termasuk menyimpan dan mengelola data dengan sebaiknya sesuai program aplikasi yang dijalankan</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-data-keruangan-menggunakan-struktur-titikgaris-dan-area2-istilah-manajemen-dalam-komponen-sig3-analisis-data-spasial-yang-akan-membentuk-data-spasial-baru-yang-terbentuk-poligonarea4-perangkat">
+                            17. 1. data keruangan menggunakan struktur titik,garis Dan area2. istilah manajemen dalam komponen SIG3. analisis data spasial yang akan membentuk data spasial Baru yang terbentuk poligon/area4. perangkat keras SIG yang berfungsi untuk mencetak data5. proses pemasukan data atribut melalui pembuatan label6. perangkat keras SiG yang berfungsi untuk menyimpan data7. contoh data spasial</h2><br />
+                        <p>1. data grafis/geometris</p><p>2. penyimpanan dan pengolahan data</p><p>3. buffering</p><p>4. printer, plotter</p><p>5. labeling</p><p>6. harddisk</p><p>7. lokasi, ukuran, karakteristik objek (buatan atau alami)</p><br />
+                                            <h2 class="ez-toc-section" id="carilah-data-mengenai-batang-tumbuhan-yang-struktur-dan-fungsinya-telah-termodifikasi-nama-tumbuhan-fungsi-tumbuhan-informasi-yang-di-peroleh">
+                            18. carilah data mengenai batang tumbuhan yang struktur dan fungsinya telah termodifikasi. nama tumbuhan, fungsi tumbuhan, informasi yang di peroleh</h2><br />
+                        -tumbuhan jahe fungsi tambahan menjadi cadangan makanan dari buku<br />-tumbuhan tebu fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan kentang fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan kunyit fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan mantang (ubi jalar) fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan kencur fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan bawang fungsi tambahan penyimpan cadangan makanan dari buku<br />-tumbuhan strawberi fungsi tambahan penyimpan cadangan makanan, alat perbanyakan vegetatif dari internet<br />-tumbuhan pisang fungsi tambahan tempat cadangan makanan dari internet<br />-tumbuhan suweg fungsi tambahan tempat cadangan makanan dari internet<br /><br />
+                                            <h2 class="ez-toc-section" id="penyelesaian-masalah-kemiskinan-harus-di-dasarkan-pada-pemahaman-dan-pengkajian-mengenai-struktur-dan-kultur-masyarakat-dalam-hal-inifungsi-sosiologi-seperti-memeberikan-data-yang-akurat-kepada-para">
+                            19. penyelesaian masalah kemiskinan harus di dasarkan pada pemahaman dan pengkajian mengenai struktur dan kultur masyarakat.Dalam hal ini,fungsi sosiologi seperti memeberikan data yang akurat kepada para pengambil kebijakan,berguna untuk?​</h2><br />
+                        <p>Fungsi sosiologi seperti memeberikan data yang akurat kepada para pengambil kebijakan berguna untuk memudahkan dalam menetukan masyarakat mana yang membutuhkan bantuan agar terhindar dari masalah kemiskinan.
+</p><p></p>Pembahasan<p>Sosiologi merupakan suatu ilmu sosial yang berhubungan dengan kehidupan manusia dan interaksinya di lingkungan masyarakat.
+</p><p><strong>Ciri-ciri ilmu sosiologi, yaitu:
+</strong></p><p>-Ilmu yang memperlajari tentang hubungan manusia dengan manusia.
+</p><p>-Ilmu yang mempelajari tentang semua gejala yang terjadi di lingkungan masyarakat.
+</p><p>-Ilmu yang mempelajari tentang semua hal yang bisa menjadi nilai baik dan bisa menjadi buruk.
+</p><p>-Ilmu sosiolgi adalah ilmu terapan.
+</p><p>-Ilmu sosiologi adalah ilmu abstrak.
+</p><p>
+</p><p><strong>Sifat-sifat dasar ilmu sosiologi, sebagai berikut:
+</strong></p><p>-Empiris yaitu ilmu sosiologi adalah suatu ilmu yang didasari dengan pengamatan dan masuk akal.
+</p><p>-Teoretis yaitu ilmu sosiologi adalah suatu ilmu yang dihasilkan berdasarkan penelitian yang nyata di lapangan.
+</p><p>-Komulatif yaitu ilmu sosiologi adalah suatu ilmu yang didasarkan pada teori-teori yang telah ada sebelumnya.
+</p><p>-Non etis yaitu ilmu sosiologi adalah suatu ilmu yang tidak mempersoalkan baik buruknya masalah sosial tetapi menjelaskan suatu masalah secara detail.
+</p><p>
+</p><p><strong>Objek kajian ilmu sosiologi, sebagai berikut:
+</strong></p><p>-Masyarakat merupakan sistem sosial yang saling berhubungan, berkaitan dan berinteraksi satu dengan yang lainnya yang menghasilkan nilai sosial dan norma soaial.
+</p><p>-Kebudayaan merupakan hasil dari rasa, cipta, dan karsa dari manusia.
+</p><p>
+</p><p><strong>Macam-macam objek ilmu sosiologi, sebagai berikut:
+</strong></p><p>-Objek material sosiologi yaitu objek studi sosiologi yang mengenai gejala sosial, kehidupan sosial, dan hubungan antar masyarakat.
+</p><p>-Objek formal sosiologi yaitu dampak dari apa yang telah silakukan masyarakat pada lingkungan dan kehidupan sosialnya.
+</p><p>-Objek budaya yaitu faktor yang dapat mempengaruhi hubungan antar masyarakat di lingkungan masyarakat.
+</p><p>-Objek agama yaitu faktor yang dapat menimbulkan interaksi masyarakat dan hubungan antar manusia dalam masyarakat.
+</p><p>
+</p>Pelajari lebih lanjut
+<p>materi tentang konflik sosial brainly.co.id/tugas/26218315
+</p><p>materi tentang interaksi sosial brainly.co.id/tugas/25783436
+</p><p>materi tentang stratifikasi sosial brainly.co.id/tugas/26199126
+</p>------------------------------------------------------
+
+Detail jawaban
+<p><strong>Kelas:</strong> 10 - SMA
+</p><p><strong>Mapel: </strong>Sosiologi
+</p><p><strong>Bab: </strong>Ilmu Sosiologi
+</p><p><strong>Kode:</strong> -
+</p><p>
+</p><p><strong>Kata kunci:</strong> Sosiologi, ciri-ciri ilmu sosiologi, sifat dasar ilmu sosilogi, objek kajian ilmu sosilogi, macam-macam objek kajian ilmu sosiologi.
+</p><p>AJ.
+</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-struktur-data-dalam-hal-kalam-penyimpanan-data-bantu-jawab-yaaaah-tulung-entar-tf-50k-dehhh">
+                            20. Apakah fungsi struktur data dalam hal Kalam penyimpanan data     
+BANTU JAWAB YAAAAH TULUNG ENTAR TF 50K dehhh</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi utama dari struktur data adalah untuk menyimpan data di penyimpanan seperti hard disk, flash drive, atau server. Data yang disimpan dapat berupa file, folder, serta data atau informasi yang berupa dokumen, gambar, audio, video, dan lain-lain.</p><p></p><p></p><p>Tujuan dari penggunaan struktur data adalah untuk mengoptimalkan penyimpanan data, mempercepat akses ke data, serta membantu dalam pengelolaan data. Misalnya, melalui penyusunan data yang terstruktur menjadi database yang dapat diakses dan dipakai secara cepat melalui interaksi dengan pengunduh</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-berfungsi-dalam-pergerakan2-bekerja-dibawah-kesadaran-kita3-memiliki-struktur-gelap-terangdata-tersebut-merupakan-ciri-ciri-otot-a-polosb-bisepc-lurikd-jantung">
+                            21. 1). berfungsi dalam pergerakan2). bekerja dibawah kesadaran kita3). memiliki struktur gelap terangdata tersebut merupakan ciri - ciri otot...a. polosb. bisepc. lurikd. jantung</h2><br />
+                        jawabannya adalah yang C. otot lurik. jawabannya adalah ( c ) yaitu otot lurik <br />
+                                            <h2 class="ez-toc-section" id="kamus-data-data-dictionary-adalah-komponen-system-manajemen-basis-data-yg-berfungsi-untuk-a-menyimpan-program-aplikasi-b-menyimpan-file-basis-data-c-menyimpan-basis-datanya-sendiri-d-menyi">
+                            22. Kamus data (data dictionary) adalah komponen system manajemen basis data yg berfungsi untuk ?
+A. Menyimpan program aplikasi.
+B . Menyimpan file basis data.
+C. Menyimpan basis datanya sendiri.
+D. Menyimpan metadata tentang struktur data dan skema basis data.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D. Menyimpan metadata tentang struktur data dan skema basis data.</p><p><strong>Penjelasan:</strong></p><p>Maaf kalau salah :)</p><p><strong>.</strong></p><p><strong>A</strong><strong>m</strong><strong>n</strong><strong>_</strong><strong>k</strong><strong>y</strong></p><br />
+                                            <h2 class="ez-toc-section" id="tipe-data-statik-hanya-bisa-dideklarasikan-pada-akhir-eksekusi-awal-fungsi-awal-struktur-pertengahan-run%e2%80%8b">
+                            23. Tipe data statik hanya bisa dideklarasikan pada... Akhir eksekusi Awal fungsi Awal struktur Pertengahan RUN​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b. Awal fungsi</p><p><strong>Penjelasan:</strong></p><p>Awal fungsi karena tipe data statik hanya akan dideklarasikan sekali di awal fungsi.</p><br />
+                                            <h2 class="ez-toc-section" id="tipe-data-dasar-sebagai-jenis-tipe-data-primitive-tidak-terstruktur-yang-didefinisikan-oleh-a-bahasa-pemrograman-b-fungsi-dan-prosedur-c-programmer-yang-bersangkutan-d-sesuai-permintaan-user">
+                            24. tipe data dasar sebagai jenis tipe data primitive tidak terstruktur yang didefinisikan oleh.. a. bahasa pemrograman b. fungsi dan prosedur c. programmer yang bersangkutan d. sesuai permintaan user​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawabannya adalah a. bahasa pemrograman. Tipe data dasar (primitive data types) merupakan jenis tipe data yang sudah ditentukan dan didefinisikan oleh bahasa pemrograman itu sendiri. Contohnya, dalam bahasa pemrograman Java, tipe data dasar meliputi tipe data integer, float, boolean, char, dll. Tipe data ini tidak terstruktur dan memiliki aturan serta ukuran yang sudah ditentukan oleh bahasa pemrograman tersebut.</p><p><strong>Jawaban:</strong></p><p>a. bahasa pemrograman</p><p><strong>Penjelasan:</strong></p><p>Tipe data dasar (primitive data types) merupakan jenis tipe data yang telah didefinisikan secara langsung dalam bahasa pemrograman. Tipe data ini biasanya menyediakan representasi dasar untuk jenis data yang umum digunakan seperti bilangan bulat, bilangan desimal, karakter, dan boolean. Contoh tipe data dasar yang umum adalah integer, float, char, dan boolean.</p><p></p><p>Pemrograman yang efektif melibatkan pemahaman dan penggunaan yang tepat dari tipe data dasar ini sesuai dengan kebutuhan program yang dikembangkan.</p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-data-berikut-1-penyebaran-proses-spawn-proccess-2-display-fungsi-fungsi-waktu-3-inisialisasi-dan-collection-4-display-input-terstruktur-berdasarkan-data-di-atas-program-master-b">
+                            25. Perhatikan data berikut! (1) Penyebaran proses (spawn proccess) (2) Display fungsi-fungsi waktu (3) Inisialisasi dan collection (4) Display input terstruktur Berdasarkan data di atas, program master bertugas dalam ... a. (1) dan (3) b. (2) dan (4) c. (1), (2), dan (3) d. (2), (3), dan (4)​</h2><br />
+                        <p>B. </p><p>Semoga Membantu Dan Bermanfaat kak</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-data-berikut1-penyebaran-proses-spawn-proccess2-display-fungsi-fungsi-waktu3-inisialisasi-dan-collection4-display-input-terstrukturberdasarkan-data-di-atas-program-master-b">
+                            26. Perhatikan data berikut!
+(1) Penyebaran proses (spawn proccess)
+(2) Display fungsi-fungsi waktu
+(3) Inisialisasi dan collection
+(4) Display input terstruktur
+Berdasarkan data di atas, program master bertugas dalam ...
+a. (1) dan (3)
+b. (2) dan (4) 
+c. (1), (2), dan (3)
+d. (2), (3), dan (4)</h2><br />
+                        <p>Jawaban:</p><p>d. 2,3, DAN 3. </p><p>Penjelasan:</p><p>Maaf kalo salah jadikan jawaban yang terbaik </p><br />
+                                            <h2 class="ez-toc-section" id="kelebihan-menggunakan-struktur-data-stuck-adalaha-mengizinkan-perubahan-ukuran-variabelb-kemungkinan-stack-overflowc-mudah-rusak-d-akses-acak-tidak-dimungkinkane-manajemen-fungsi-yang-efisien">
+                            27. kelebihan menggunakan struktur data stuck adalaha. mengizinkan perubahan ukuran variabelb. kemungkinan stack overflowc. mudah rusak d. akses acak tidak dimungkinkane. manajemen fungsi yang efisien ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawaban yang benar adalah:</p><p>e. manajemen fungsi yang efisien</p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="18-materi-yang-dibahas-pada-elemen-dampak-sosial-informatika-dsi-adalah-a-fungsi-algoritma-representasi-data-dan-struktur-data-b-pengelolaan-data-pencarian-data-peringkasan-data-dan-vi">
+                            28. 18. Materi yang dibahas pada elemen Dampak Sosial Informatika (DSI) adalah **** a. fungsi, algoritma, representasi data, dan struktur data b. pengelolaan data, pencarian data, peringkasan data, dan visualisasi data c. media sosial, cyberbullying, dan pengkajian informasi secara kritis d. pemrograman menggunakan dua bahasa pemrograman visual​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. fungsi, algoritma, representasi data, dan struktur data</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-struktur-teks-formulir2-data-apa-saja-yang-dapat-dalam-formulir-pengiriman-barang3-untuk-apa-biasanya-formulir-digunakan4-apa-keuntungan-penggunaan-formulir-5-apakah-fungsi-dari-fo">
+                            29. 1. Jelaskan struktur teks formulir!2. Data apa saja yang dapat dalam formulir pengiriman barang?3. Untuk apa biasanya formulir digunakan?4. Apa keuntungan penggunaan formulir ?5. Apakah fungsi dari formulir?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.-kepala(heading)</p><p>  -berisi mengenai nama lembaga</p><p>  -alamat hingga nomor telepon</p><p>  -berisikan informasi mengenai tata cara        pengisian formulir dengan tepat dan benar</p><p>2. nama lengkap, alamat rumah, nomor kontak yang bisa dihubungi, kode pos penerima</p><p>3. untuk mengisi data</p><p>4.dengan formulir pengisian data akan seragam dan menghemat waktu biaya dan tenaga</p><p>5.</p><br />
+                                            <h2 class="ez-toc-section" id="kamus-data-data-dictionary-adalah-komponen-system-manajemen-basis-data-yg-berfungsi-untuka-%c2%a0menyimpan-metadata-tentang-struktur-data-dan-skema-basis-datab-%c2%a0menyimpan-file-basis-datac">
+                            30. Kamus data (data dictionary) adalah komponen system manajemen basis data yg berfungsi untuk:a. Menyimpan metadata tentang struktur data dan skema basis datab. Menyimpan file basis datac. Menyimpan program aplikasid. Menyimpan berkase. Menyimpan basis datanya sendiri​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D.menyimpan berkas</p><p>itu se tau saya</p><p><strong>Jawaban:</strong></p><p>b.menyimpan file basis data </p><p><strong>Penjelasan:</strong></p><p>moga membantu :-)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buat-lah-5-buah-soal-untuk-algoritmaflowcharttipe-datasejarah-pascal5-buah-soal-untuk-struktur-dasar-bahasa-dasar5-buah-soal-untuk-struktur-kembali-aliran5-buah-soal-untuk-struktur-perulangan5-buah">
+                            31. buat lah 5 buah soal untuk algoritma,flowchart,tipe data,sejarah pascal5 buah soal untuk struktur dasar bahasa dasar5 buah soal untuk struktur kembali aliran5 buah soal untuk struktur perulangan5 buah soal untuk prosedur dan fungsidengan kunci jawaban masing-masingmohon bantuannya</h2><br />
+                        1. Tipe variabel ekspresi manakah yang tidak dapat ditampilkan dengan procedure Writeln?<br />a. Type T=Integer   b. Type T=String   c. Type C=Char     d. Type T=(Small, Medium, Large)   e. Semua valid<br />Jawab:d. Type T=(Small, Medium, Large)<br />Pembahasan:Opsi d adalah tipe data enumerasi. Tipe data enumerasi tidak dapat ditampilkan dengan perintah Writeln.<br /><br />2. Deklarasi prosedur manakah yang dibenarkan?<br />a. procedure hapus  b. procedure hapus(s:string)  c. procedure hapus(var s:string)  d. procedure hapus(s:string):boolean   e. procedure hapus(var data);<br />Jawab:d. procedure hapus(s:string):boolean<br />Pembahasan:Untuk penulisan prosedur, tidak diperbolehkan adanya nilai kembali. Sedangkan parameter tanpa tipedata (pada opsi e), dapat dibenarkan.<br /><br />3. Deklarasi function manakah yang tidak diizinkan?<br />a. Function density(x:real):real;    b. Function density(b:byte):byte;    c. Function density(var s:string):real;    d. Function density(var data):byte;   e. Function density;<br />Jawab:e. Function density;<br />Pembahasan:Untuk penulisan function , harus ada nilai kembali.<br /><br />4. Perintah if manakah yang tidak dibenarkan:<br />a. If - 1        b. If - 2      c. If - 3        d. If – 1 dan if - 2     e. Tidak ada if yang salah<br />Jawab:e. Tidak ada if yang salah<br />Pembahasan:Pada If – 1, ekspresi i+j and k adalah ekspresi matematika dengan urutan pengerjaan j and k kemudianditambahkan dengan i. Ini merupakan ekspresi yang valid dalam bahasa PascalPada If – 3, ekspresi Not L akan dioperasikan terlebih dulu. Ini juga merupakan ekspresi yang validdalam bahasa Pascal.<br /><br />5. Perintah mana yang tidak boleh digunakan untuk file bertipe text?<br />a. Assign     b. Reset     c. EOF    d. FilePos     e. Semua boleh digunakan untuk Text<br />Jawab:d. FilePos<br />Pembahasan:Perint ah FilePos adalah perintah untuk mengetahui posisi file pointer (penunjuk file), dan hanya dapatdioperasikan untuk file bertipe bukan text.<br />
+                                            <h2 class="ez-toc-section" id="analisislah-dengan-memperhatikan-kaidah-dan-struktur-teks-laporan-hasil-observasi1-apakah-hasil-analisismu-mempunyai-kelebihan-jelaskan2-apakah-fungsi-data-dalam-laporan-hasil-observasitolong-ba">
+                            32. Analisislah dengan memperhatikan kaidah dan struktur teks laporan hasil observasi!1. apakah hasil analisismu mempunyai kelebihan? jelaskan!2. apakah fungsi data dalam laporan hasil observasi?tolong bantu,,,,jawab cepat....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Sesuai keunggulan dalam merangkum</p><p>2.Agar mempermudah di mengerti</p><br />
+                                            <h2 class="ez-toc-section" id="37-disajikan-data-tentang-struktur-sel-jaringan-dan-fungsi-jaringan-sebagai-berikutdi-gambarhubungan-yang-tepat-antara-struktur-sel-jaringan-dan-fungsi-jaringan-ditunjukkan-oleh-a-124b">
+                            33. 37. Disajikan  data tentang struktur sel jaringan dan fungsi jaringan sebagai berikut:
+(Di gambar)
+Hubungan yang tepat antara struktur sel jaringan dan fungsi jaringan ditunjukkan oleh...
+A. 1,2,4
+B. 1,3,5
+C. 2,3,5
+D. 2,4,5</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kalo ngak salah jawaban nya yang B </p><p>maaf kalu salah</p><br />
+                                            <h2 class="ez-toc-section" id="carilah-data-mengenai-batang-tumbuhan-yang-struktur-dan-fungsinya-telah-termodifikasi-nama-tumbuhan-fungsi-tumbuhan-informasi-yang-di-peroleh">
+                            34. carilah data mengenai batang tumbuhan yang struktur dan fungsinya telah termodifikasi. nama tumbuhan, fungsi tumbuhan, informasi yang di peroleh</h2><br />
+                        tumbuhan jahe fungsi tambahan menjadi cadangan makanan dari buku<br />-tumbuhan tebu fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan kentang fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan kunyit fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan mantang (ubi jalar) fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan kencur fungsi tambahan menyimpan cadangan makanan dari buku<br />-tumbuhan bawang fungsi tambahan penyimpan cadangan makanan dari buku<br />-tumbuhan strawberi fungsi tambahan penyimpan cadangan makanan, alat perbanyakan vegetatif <br />
+                                            <h2 class="ez-toc-section" id="berfungsi-dalam-pergerakan-2-bekerja-di-bawah-kesadaran-kita-3-memiliki-struktur-gelap-dan-terang-data-tersebut-merupaka-ciri-ciri-otot-%e2%80%a6">
+                            35. berfungsi dalam pergerakan 2) bekerja di bawah kesadaran kita 3) memiliki struktur gelap dan terang. Data tersebut merupaka ciri-ciri otot …. *</h2><br />
+                        otot lurik maaf kalau salah<br />
+                                            <h2 class="ez-toc-section" id="data-mengenai-batang-tumbuhan-yang-struktur-dan-fungsinya-telah-termodifikasinama-tumbuhanfungsi-tambahandan-informasitolong-ya">
+                            36. Data mengenai batang tumbuhan yang struktur dan fungsinya telah termodifikasi,nama tumbuhan,fungsi tambahan,dan informasi
+Tolong ya..</h2><br />
+                        Kentang (Solanum tuberosum L.) ⇒ tanaman dari bangsa Solanaceae yang pertumbuhannya ke bawah tanah membentuk umbi batang yang bisa dimakan. Umbi batang ini layak nya buah atau sayur yang bisa dimakan hasil dari cadangan fotosintesis.<br /><br />Umbi batang (Tuber) ⇒ batang dibawah permukaan dalam tanah yang juga menebal, namun tidak berdaun, permukaan seringkali tampak licin, buku-buku batang dan ruas-ruasnya tidak jelas karena tidak adanya sisa daun, seringkali dinamakan umbi telanjang (tuber nodus). Pengalihan fungsi batang yang menjadi tempat cadangan makanan.<br /><br />
+                                            <h2 class="ez-toc-section" id="1-proses-perbaikan-data-spasial-karena-kesalahan-saat-digitasi2-perangkat-keras-sig-yang-berfungsi-sebagai-alat-memasukkan-data-3-memberikan-nilai-koordinat-lintang-dan-bujur4-proses-pengubahan-da">
+                            37. 1. proses perbaikan data spasial karena kesalahan Saat digitasi2. perangkat keras SIG yang berfungsi sebagai alat memasukkan data 3. memberikan nilai koordinat lintang dan bujur4. proses Pengubahan data geografi menjadi data raster5. data keruangan dalam struktur matriks atau pixel6. sistem berbasis komputer untuk menyimpan data geografi7. contoh data atribut8. proses pengubahan data raster menjadi data vektor9. perangkat keras SIG yang berfungsi untuk  memperOSes data10.subsistem SIG yang memperoses semUA kegiatan penanganan data11. instansi yang menyediakan data statistik</h2><br />
+                        <p>1. editing</p><p>2. scanner, digitizer</p><p>3. konversi/transformasi koordinat</p><p>4. rasterisation/rasterisasi</p><p>5. data raster</p><p>6. SIG</p><p>7. data atribut adalah identitas yang dimiliki data grafis. ex: jumlah penduduk, curah hujan, kemiringan lereng, tingkat kesuburan tanah, dll.</p><p>8. vektorisation/vektorisasi</p><p>9. CPU</p><p>10. manipulasi dan analisis data</p><p>11. BPS (badan pusat statistik)</p><p>semoga membantu, CMIIW</p><br />
+                                            <h2 class="ez-toc-section" id="akar-yang-mengalami-modifikasi-struktur-dan-fungsinya-sehingga-memiliki-fungsi-tambahan-bagi-tumbuhan-isi-data-berikut-menurut-diatasnama-tumbuhanbentukstruktur-akarfungsi-modifikasi-akarthx">
+                            38. Akar yang mengalami modifikasi struktur dan fungsinya sehingga memiliki fungsi tambahan bagi tumbuhan.
+Isi data berikut menurut diatas:
+Nama tumbuhan:
+Bentuk/struktur akar:
+Fungsi modifikasi akar:
+Thx yg sdh mau bantu</h2><br />
+                        pohon beringin akar tunjang untuk menegakkan pohon<br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-struktur-teks-formulir2-data-apa-saja-yang-terdapat-dalam-formulir-pengiriman-barang3-untuk-apa-biasanya-formulir-digunakan4-apa-keuntungan-penggunaan-formulir5-apakah-fungsi-dari-formu">
+                            39. 1.jelaskan struktur teks formulir!2.data apa saja yang terdapat dalam formulir pengiriman barang?3.untuk apa biasanya formulir digunakan?4.apa keuntungan penggunaan formulir?5.apakah fungsi dari formulir?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.Struktur formulir Kepala (Heading), berisi mengenai nama lembaga, alamat hingga nomor telepon. Instruksi (Instruction), berisikan informasi mengenai tata cara pengisian formulir dengan tepat dan benar. ... Penutup (Closing), berisi tempat dan tanggal pengisian formulir beserta nama lengkap serta tanda tangan.</p><p>2.Data diri yang terdapat dalam teks formulir pengiriman barang, yaitu nama lengkap penerima dan pengirim barang, alamat lengkap pengirim dan penerima barang, nomor telepon penerima dan pengirim barang, kode pos penerima dan pengirim barang.</p><p>3.Secara umum, fungsi atau kegunaan formulir untuk mengirim barang ini adalah sebagai identitas dan bukti pengiriman. Namun, ada beberapa kegunaan lain yang dimiliki formulir ini, yakni: Sebagai penyedia informasi tertulis yang jelas tentang pengiriman barang.</p><p>4.Ada beberapa alasan penting mengapa formulir – formulir digunakan : 1. untuk keseragaman atau pembakuan kerja ( work standarization ) 2. untuk mempermudah dalam penggolongan ( classification ) data. 3. untuk mempermudah pemberkasan ( filling ) baik sistem maupun tempatnya.</p><p>5.formulir merupakan alat yang dapat digunakan untuk mengorganisasi, mengumpulkan, mengalihkan informasi. Formulir memberikan fasilitas Page 2 terhadap pengumpulan dan pemindahan data dan informasi dengan cepat dalam bentuk yang ringkas dan padat.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="akar-yang-mengalami-modifikasi-struktur-dan-fungsinya-sehingga-memiliki-fungsi-tambahan-bagi-tumbuhan-isi-data-berikut-menurut-diatasnama-tumbuhanbentukstruktur-akarfungsi-modifikasi-akarthx">
+                            40. Akar yang mengalami modifikasi struktur dan fungsinya sehingga memiliki fungsi tambahan bagi tumbuhan.
+Isi data berikut menurut diatas:
+Nama tumbuhan:
+Bentuk/struktur akar:
+Fungsi modifikasi akar:
+Thx yg sdh mau bantu</h2><br />
+                        nama tumbuhan : wortel<br />bentuk akar : akar tunjang memanjang ke bawah<br />fungsi akar: 1.sebagai tempat menyerap air dan mineral <br />2.sebagai tempat menyimpan makanan<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/ouipSd_5ivQ?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/soal-matematika-dasar-sma.html">Soal Matematika Dasar Sma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-bidang-akuntansi.html">Contoh Soal Bidang Akuntansi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-a-level.html">Contoh Soal A Level</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-luas-limas.html">Contoh Soal Luas Limas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-pesawat-terbang.html">Fungsi Dari Pesawat Terbang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-kritik-dan-esai.html">Contoh Soal Kritik Dan Esai</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-samsung-knox.html">Fungsi Dari Samsung Knox</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-pemilik-modal.html">Fungsi Dari Pemilik Modal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-kartu-soal-hots-biologi-sma.html">Contoh Kartu Soal Hots Biologi Sma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-dan-jawaban-integral.html">Contoh Soal Dan Jawaban Integral</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-cpns-kemenkumham-pdf.html">Contoh Soal Cpns Kemenkumham Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-spltv-substitusi.html">Contoh Soal Spltv Substitusi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-tentang-angka-penting.html">Contoh Soal Tentang Angka Penting</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-skmht.html">Fungsi Dari Skmht</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/daerah-asal-fungsi-f-dari-x-ke-4x-3-adalah-x.html">Daerah Asal Fungsi F Dari X Ke 4x 3 Adalah X</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/apakah-fungsi-dari-latihan-vokal.html">Apakah Fungsi Dari Latihan Vokal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-akar-akar-persamaan-polinomial.html">Contoh Soal Akar Akar Persamaan Polinomial</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-laporan-realisasi-anggaran.html">Fungsi Dari Laporan Realisasi Anggaran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/tuliskan-dan-jelaskan-3-fungsi-hukum.html">Tuliskan Dan Jelaskan 3 Fungsi Hukum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-glb-kelas-10.html">Contoh Soal Glb Kelas 10</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://butirsoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://butirsoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://butirsoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://butirsoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://butirsoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

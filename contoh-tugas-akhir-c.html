@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Tugas Akhir C++ - BELAJAR</title>
+    <meta name="description" content="Contoh Tugas Akhir C++, , , , , , , 0, , , , , , 0, contoh-tugas-akhir-c, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh Tugas Akhir C++ - BELAJAR" />
+    <meta property="og:description" content="Contoh Tugas Akhir C++, , , , , , , 0, , , , , , 0, contoh-tugas-akhir-c, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh Tugas Akhir C++ - BELAJAR" />
+    <meta name="twitter:description" content="Contoh Tugas Akhir C++, , , , , , , 0, , , , , , 0, contoh-tugas-akhir-c, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://butirsoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://butirsoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://butirsoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://butirsoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://butirsoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://butirsoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://butirsoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://butirsoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://butirsoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://butirsoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh Tugas Akhir C++</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">husnahalimah0</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+Tugas+Akhir+C%2B%2B" alt="Contoh Tugas Akhir C++">
+                    </div>
+                    <p></p>
+                    <p>contoh barang tambang mineral logam adalah.a. marmerb. tembaga c. batu barad. gas alamtolongin ada tugas ntar malem terakhir jam 21:00 ya kaaa​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-barang-tambang-mineral-logam-adalah-a-marmerb-tembaga-c-batu-barad-gas-alamtolongin-ada-tugas-ntar-malem-terakhir-jam-2100-ya-kaaa%e2%80%8b">1.
+                                            contoh barang tambang mineral logam adalah.a. marmerb. tembaga c. batu barad. gas alamtolongin ada tugas ntar malem terakhir jam 21:00 ya kaaa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tugas-cdiberikan-suatu-bilangan-yaitu-a-dan-b-dimana-a-merupakan-banyaknya-bilangan-yang-akan-diinput-dan-b-merupakan-bilangan-yang-akan-dicari-dari-inputan-bilangan-carilah-letak-bilangan-ke-b">2.
+                                            Tugas C++
+Diberikan suatu bilangan yaitu A dan B, dimana A merupakan banyaknya bilangan yang akan diinput, dan B merupakan bilangan yang akan dicari dari inputan bilangan. 
+Carilah letak bilangan ke berapakah nilai dari B, apabila terdapat 2 atau lebih nilai B maka cetak urutan yang paling akhir.
+Contoh input:
+5 4
+5 6 4 1 5
+Contoh output:
+Bilangan ke-3
+Contoh input:
+5 4
+5 6 4 1 4
+Contoh output:
+Bilangan ke-5
+Buat dan rancanglah programnya!
+(ini tugas teman saya)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-secara-ringkas-apa-yang-dimaksud-dengan-persaingan-harga-dan-persaingan-non-harga-berikan-masing-masing-contohnya2-a-jelaskan-secara-ringkas-apa-yang-dimaksud-dengan-eksternalitas-b-b">3.
+                                            1. jelaskan secara ringkas apa yang dimaksud dengan persaingan harga dan persaingan Non-harga, berikan masing-masing contohnya2. a. jelaskan secara ringkas apa yang dimaksud dengan Eksternalitas, b. berikan 1 contoh Eksternalis Postif, c. berikan 1 contoh Eksternalitas Negatif beserta usulan solusinya?tolong kerjain tugas dong hari ini terakhir dikumpulin terima kasih​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#lsiswa-kelas-vi-c-sedang-bermusyawarah-untuk-membicarakan-persiapan-mengikuti-kegiatanhari-pasar-yang-akan-diadakan-di-sekolah-semua-siswa-mengikuti-jalannya-musyawarahdengan-tertib-siswa-yang-ingin">4.
+                                            lSiswa kelas VI C sedang bermusyawarah untuk membicarakan persiapan mengikuti kegiatanhari pasar yang akan diadakan di sekolah. Semua siswa mengikuti jalannya musyawarahdengan tertib. Siswa yang ingin memberikan pendapat diberikan kesempatan untukmenyampaikan pendapatnya. Meskipun berbeda pendapat, semua siswa tetap mendengarkandan menghargai pendapat temannya. Pada akhir musyawarah dicapai kesepakatan tentang jenisbarang yang akan dijual dan pembagian tugas yang harus mereka lakukan. Tidak semua siswasetuju dengan keputusan itu, tapi mereka tetap menerima hasil musyawarah dengan baik.Jelaskan 3 contoh penerapan nilai-nilai demokrasi dalam peristiwa tersebut!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-migrasi-harian-disebut-juga-mobilitas-ulang-alik-contoh-kegiatan-mobilitas-ulang-alik-adalah-a-karyawan-bekerja-pada-perusahaan-dengan-tugas-berkeliling-ke-kota-kota-diseluruh-pelosok-negerib">5.
+                                            1. Migrasi harian disebut juga mobilitas ulang-alik. Contoh kegiatan mobilitas ulang-alik adalah...a. Karyawan bekerja pada perusahaan dengan tugas berkeliling ke kota-kota diseluruh pelosok negerib. Karyawan sebuah perusahaan swasta di Jakarta yang bermukim di Bogorsetiap hari pulang pergi menggunakan kereta api komuterc. Karyawan yang bekerja di suatu kota kembali ke daerah asalnya pada akhirpekand. Pedagang sayuran dari daerah pegunungan setiap hari menjualdagangannya di pasar desa di kaki pegunungane. Petani menjadi pekerja lepas di perkotaan selama beberapa waktu selamamenunggu masa tanam dimulai.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%e2%9c%b4%ef%b8%8ftugas-hari-ini-adalah-menulis-kembali-soal-dan-jawaban-dalam-buku-tulis-kalian-berilah-tanda-silang-pada-hurup-a-b-c-dan-d-yang-tepat-1-hari-akhir-dibagi-menjadi-berapa-jenis-a">6.
+                                            ✴️tugas hari ini adalah menulis kembali soal dan jawaban dalam buku tulis kalian. berilah tanda silang pada hurup a, b, c, dan d yang tepat. 1. Hari akhir dibagi menjadi berapa jenis a.1 b. 2 c. 3 d. 4 2.) kiamat kecil disebut juga kiamat... a. kubro b. besar c. sedang d. cukup 3.) kiamat kubro merupakan kiamat... a. besar b. kecil c. sedang d. cukup 4.) contoh kiamat kecil adalah.. a. sakit perut b. longsor c. banjir d. hujan 5.) gunung meletus adalah contoh kiamat... a. kubro b. besar c. akhir zaman d. sugro 6.) kelalaian siapakah yang biasanya menyebabkan banjir... a. masyarakat b. selokan c. hujan d. manusia 7.) kebakaran yang sangat besar merupakan contoh kiamat... a. kubro b. besar c. akhir zaman d. kecil 8.) pada surat apakah yang menceritakan kondisi kiamat besar... a. al-zalzalah b. at-takatsur c. al-kafiruun d. al-fiil 9.) Tanda-Tanda kiamat besar adalah... a. gunung meletus b. laut meluap c. gunung terbang d. air laut naik ke darat 10.) planet-planet bertabrakan adalah contoh kiamat... a. kubro b. sugro c. akhir zaman d. kecil selamat mengerjakan. akan lebih baik bila orang tua menjadi pendamping dan meminta ananda mengerjakan sendiri. terimakasih.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bahasa-indonesia-kd-3-31-berilah1sudinpetugasudinpetugasa2-oberilah-tanda-silang-x-pada-salah-satu-a-b-c-atau-d-pada-pilihan-jawaban-yang-benarperhatikan-percakapan-wawancara-berikut-inipak-m">7.
+                                            Bahasa Indonesia (KD 3.3)1.Berilah1SUdinPetugasUdinPetugasa2.oBerilah tanda silang (x) pada salah satu a, b, c atau d pada pilihan jawaban yang benarPerhatikan percakapan wawancara berikut ini!"Pak, mengapa akhir-akhir ini beberapa wilayah Indonesia dilanda banjir?""Banjir itu terjadi karena beberapa penyebab.": "Contoh penyebabnya apa?""Misalnya sering membuang sampah sembarangan hingga menyumbat saluran air,seperti selokan atau sungai, selain itu karena menebang pohon secara berlebihansehingga daerah serapan air berkurang"Udin "Apakah kita bisa mencegah banjir Pak?"Petugas: "Tentu saja bisa Udin. Salah satunya dengan menyadari pentingnya menjagakebersihan lingkungan, seperti tidak membuang sampah sembarangan danmengusahakan penanaman pohon kembali".Udin : "O, ternyata seperti itu. Pak. Terima kasih atas penjelasannya".1. Tema wawancara petugas dan Udin adalah3. Kesimpulan isi wawancara tersebut adalaha. akhir-akhir ini beberapa wilayah Indone-a. peristiwa banjirsia dilanda banjirb. kesehatan lingkunganb. kita harus menjaga lingkungan untukc. kebersihan rumahmencegah banjird. lingkungan yeng tercemarkita harus bersama-sama mampu2. Salah satu faktor penyebab banjir darimemperbaiki kondisi lingkunganwawancara di atas adalah ....d. banyak penyebab banjir yang berdampaka. mengadakan reboisasibagi keadaan lingkunganb. mengadakan sistem terasering ditanah miringc. membuang sampah sembarangand. membakar sampah3. Kesimpulan isi Wawancara tersebut adalah A akhir-akhir ini beberapa wilayah Indonesia dilanda banjirB kita harus menjaga lingkungan untuk mencegah banjirC kita harus bersama-sama mampu memperbaiki kondisi lingkungandek banyak penyebab banjir yang berdampak bagi keadaan lingkungan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#niterakhirbantu-ya-a-tulis-pakai-huruf-jepang1-aku-pergi-menuju-bus2-aku-naik-masuk-bus3-aku-berdiri-di-bus4-aku-turun-dari-busketerangan-itu-yang-ada-bintang-dua-contohnya">8.
+                                            Ni,terakhir,bantu ya.........A. Tulis Pakai huruf Jepang1. AKU PERGI *MENUJU* BUS2. AKU NAIK *MASUK* BUS3. AKU BERDIRI *DI* BUS4. AKU *TURUN DARI* BUSKeterangan =  itu yang ada bintang dua contohnya *DI* berarti huruf/kalimatnya tebal,aku ga tau kenapa tebal:))B. Bahasa Jepangnya KAMU SUKA JEPANGAKU JUGA SUKA JEPANGC. BUATLAH CONTOH KATA MAJEMUK DALAM BAHASA JEPANG DAN SERTAKAN ARTINYA (  ARTINYA DALAM BAHASA INDONESIA )BANTU SEBAGIAN TUGASKU KA,KALAU BISA JANGAN TRANSLETAN APLIKASI PENERJEMAH ATAU GOOGLE,KARENA BELUM TENTU BENAR:))ARIGATO YA YANG JAWAB PERTANYAANKU...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantu-tugas-aku-kak-secepatnya-klo-bisa-sekarang1-di-bawah-ini-yang-merupakan-proses-pengolahan-limbah-lunak-adalah-sebagai-berikut%e2%80%a6a-pembelian-limbah-lunak-dari-vendorb-penjualan-li">9.
+                                            tolong bantu tugas aku kak secepatnya klo bisa sekarang1. Di bawah ini yang merupakan proses pengolahan limbah lunak adalah sebagai berikut…A. Pembelian limbah lunak dari vendorB. Penjualan limbah lunak kepada konsumen akhirC. Pengeringan limbah lunakD. Pengemasan produk dari limbah lunak2.Proses pembuatan kerajinan dari jerami salah satunya adalah dengan pemanasan. Pemanasan dapat dilakukan dengan menggunakan…A. Kompor gas tekanan tinggiB. OvenC. Lilin bakarD. Pemanggang3.Barang-barang yang sudah tidak berguna didaur ulang lagi. Tidak semua barang bisa didaur ulang, tetapi saat ini sudah banyak industri kecil dan industri rumah tangga yang memanfaatkan sampah menjadi barang lain contohnya kerajinan.prinsip tersebut adalah...A. reuseB. recycleC. reduseD. resepsi4. Meminimalisir barang atau material yang kita pergunakan. Semakin banyak kita menggunakan material, semakin banyak sampah yang dihasilkan.prinsip tersebut adalah...A. reduceB. reuseC. recycleD. reboisasi5. Contoh hasil karya yang mungkin dihasilkan dari limbah kertas adalah ...A. pigura fotoB. tempat nasiC. peralatan dapurD. gantungan kunci6. Salah satu produk pengolahan limbah organik yang dapat terurai adalah ...A. komposB. biomasaC. biogasD. biopori​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%d9%8a%d9%88%d9%85%d8%a7-a%d9%88%d8%a7%d9%84%d8%a7%d9%83%d8%b1%d8%a7%d9%85%d9%88%d8%b4%d9%81%d8%aa%d9%8a%d9%86-c%d9%86%d8%b3%d8%a7%d8%a1-dlllmdlraberilah-tanda-silang-x-pada-huruf-a-b-c-atau-d-p">10.
+                                            يوما aوالاكراموشفتين Cنساء .dLLLMDLRABerilah tanda silang (x) pada huruf a, b, c, atau d pada jawaban yang benar!1. Huruf jim berharkat Fathatain dibaca waqaf, disebut bacaan mada. arid lissukun Kiwadc. layyind. wajib muttasil2. Berikut ini yang termasuk contoh bacaan mad ari lissukun adalahb.3. Huruf yang berharkat fathah bertemu dengan huruf ya sukun dan dibaca waqaf,disebut bacaan mad ...a. arid lissukun b. iwadc. layyind. wajib muttasil)a. arid lissukun b. iwadc. layyind. wajib muttasil5. Jika mad asli berada di akhir ayat, namun tidak dibaca waqaf, maka disebut mad ...a. arid lissukun b. iwadc. layyind. asli6. Berikut ini yang termasuk contoh bacaan mad layyin adalah ...b.7. Berikut ini yang bukan merupakan contoh mad iwad adalah ..... adalah contoh hukum bacaan mad (نساء) Lafad.4.ديوما ووالاكرامCوشفتين )يومامغفرة م .bCشيئانساء و .dدم دم... adalah contoh bacaan Mad (وفرعون ) Lafad.98. Cara membaca bacaan mad arid lissukun yang lebih sempurna adalah ..a. 2 harkatb. 4 harkat6 harkatd. 1 harkat9. ( )a. arid lissukun b. iwadc. layyind. wajib muttasil10. Berikut ini yang bukan termasuk contoh bacaan mad arid lissukun adalahb.C,d..ملك الناس .aتقويمقریشيفعلون هم .dTolong di bantu jawab tugas sekarang​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-b-ind-simpulan-merupakan-akhir-dari-uraian-panjang-suatu-bacaan-atau-teks-a-opini-b-fakta-11-ppkn-berikut-yang-merupakan-contoh-penerapan-sila-keempat-pancasila-adalah-c-ikhtisar">11.
+                                            10. (B. Ind) Simpulan merupakan... akhir dari uraian panjang suatu bacaan atau teks. a. opini b. fakta 11. (PPKn) Berikut yang merupakan contoh penerapan sila keempat Pancasila adalah ... c. ikhtisar d. pendapat a. mengumpulkan sumbangan untuk korban banjir b. tidak memaksakan pendapat ketika berdiskusi C. menghormati agama dan kepercayaan teman d. membagi tugas kelompok dengan adil 12. (SBDP) Setelah membuat gambar sketsa, tahap selanjutnya dalam pembuatan patung adalah .... a. memilih bahan b. menggambar sketsa C. menentukan teknik pembuatan d. memamerkan patung yang sudah dibuat 3. (IPS) Persamaan kondisi geografis negara Indonesia dan Filipina adalah 1 (PPKn) Tuliskan tiga contoh pengamatan sila kelima Pancasila dalam kehidupan sehari-hari​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal-ujian-akhir-semester-pkn-sma-26-korupsi-adalah-dengan-sengaja-melakukan-kesalahan-atau-melalaikan-tugas-dengan-tujuan-memperkaya-diri-sendiri-atau-kelompok-di-bawah-ini-adalah-contoh-korupsi-y">12.
+                                            Soal ujian akhir semester PKN SMA: 26. Korupsi adalah dengan sengaja melakukan kesalahan atau melalaikan tugas dengan tujuan memperkaya diri sendiri atau kelompok. Di bawah ini adalah contoh korupsi yang dilakukan oleh pejabat negara adalah….
+ a. Kasus Antasari Ashar
+ b. Kasus Perampokan Bank di Medan
+ c. Kasus Bank Century
+ d. Kasus Mantan Gubernur Aceh Abdulah Puteh
+ e. Kasus investor PT Anta Boga.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#salah-satu-kopi-favorit-saya-adalah-kopidengan-rasa-irish-yang-dijual-di-salah-satukedai-kopi-di-kota-kelahiran-saya-ini-kedai-kopitersebut-tidak-terlalu-besar-tapi-memiliki-cita-rasakopi-yang-nikmat">13.
+                                            Salah satu kopi favorit saya adalah kopidengan rasa irish yang dijual di salah satukedai kopi di kota kelahiran saya ini. Kedai kopitersebut tidak terlalu besar tapi memiliki cita rasakopi yang nikmat. Irish kopi memiliki rasa yangunik. Dengan rasa manis di awal dan pahit diakhir membuat saya cukup kecanduan untukmengkonsumsinya sebagai salah satu temanuntuk mengerjakan tugas.Paragraf di atas merupakan contoh teksdeskripsi bagian jenis ...a. deskripsi bagian pemfokusanb. deskripsi bagian berdasarkan ruangc. deskripsi bagian berdasarkan prosessesuatu berlangsungd. deskripsi bagian berdasarkan anggotabagian-bagian objek​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tugas-btq-kelas-71-carilah-pengertiana-mad-shilah-qashirahb-mad-shilah-tawilahc-mad-badald-mad-tamkine-mad-lin2-tulis-contohnya-5-masing2-madayo-ges-cepet-terakhir-nanti-siang-soalnya">14.
+                                            Tugas BTQ KELAS 71. CARILAH PENGERTIANA. MAD SHILAH QASHIRAHB . MAD SHILAH TAWILAHC. MAD BADALD. MAD TAMKINE. MAD LIN2. TULIS  CONTOHNYA 5 MASING2 MADayo ges cepet, terakhir nanti siang soalnya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#andi-seorang-siswa-yang-rajin-belajar-andi-bernagkat-sekolah-pagi-pagi-dengan-penuh-semangat-seluruh-tugas-sekolah-selalu-dikerjakan-sehingga-andi-tidak-pernah-ditegur-guru-pada-akhir-semester-ni">15.
+                                            Andi, seorang siswa yang rajin belajar. Andi bernagkat sekolah pagi-pagi dengan penuh semangat. Seluruh tugas sekolah selalu dikerjakan, sehingga Andi tidak pernah ditegur guru. Pada akhir semester nilai rapor pengetahuan Andi sangat baik dan nilai rapor sikap serta keterampilan Andi pun sangat baik. Makna yang dapat diperboleh dari wacana tersebut adalah ... 
+a. melaksanakan aturan dengan kesadaran
+b. perilaku andi dijadikan contoh teladan
+c. Andi orang yang rajin, baik dan pandai
+d. pentingya mengetahui kewajiban</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal-ujian-akhir-semester-pkn-sma-38-sebagai-warga-negara-yang-baik-kita-harus-berpartisipasi-aktif-dalam-kehidupan-bernegara-contohnya-adalah-%e2%80%a6-a-memperebutkan-kekuasaan-b-mengadopsi-b">16.
+                                            Soal ujian akhir semester PKN SMA: 38. Sebagai warga Negara yang baik kita harus berpartisipasi aktif dalam kehidupan bernegara, contohnya adalah …
+ a. memperebutkan kekuasaan
+ b. mengadopsi budaya barat
+ c. aktif dalam perkelahian di sekolah
+ d. mengembangkan pendidikan politik
+ e. menghambat penyelesaian tugas</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#21-contoh-kalimat-kritik-terhadap-karya-lukisan-yang-tepat-adalah%e2%80%a6a-siapa-saja-yang-melihat-lukisan-abstrak-ini-pasti-perutnya-mual-b-lukisan-abstrak-yang-dibuatnya-aneh-dan-tidak-indah-c">17.
+                                            21. Contoh kalimat kritik terhadap karya lukisan yang tepat adalah,…a. Siapa saja yang melihat lukisan abstrak ini pasti perutnya mual.b. Lukisan abstrak yang dibuatnya aneh dan tidak indah.c. Lukisan abstrak itu akan lebih indah, apabila komposisi warnanya gelapan .d. Perpaduan warna yang dibuat dalam lukisan itu sungguh menyakitkan mata.22. Contoh kslimat kritik terhadap sebuah puisi yang baik adalah,…a. Pilihan katanya bagus.b. Bahasa yang digunakan sangat indah.c. Isi puisi sulit dipahami.d. Puisi tersebut dikemas dengan rapi.23. Contoh kalimat pujian yang tepat adalah,…a. Kamu tidak sportif pantas lawanmu kalah.b. Kamu hanya beruntung, prestasimu biasa saja.c. Kamu layak mendapat juara berkat kerja kerasmu.d. Sebenarnya prestasimu bagus, kamu hanya butuh penyempurnaan.24. Setiap hari ayah pergi ke Jakarta untuk menghidupi anak dan istrinya.Kalimat tersebut menggunakan kata tugas,….a. Preposisi dan konjungsib. Partikelc. preposisid. akhiran25. Adikpun gembira karena dibelikan boneka yang diinginkannya .Kalimat tersebut menggunakan kata tugas,…a. Partikelb. Preposisic. konjungsid. kata depan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-analisis-kegunaan-kedua-bentuk-analisa-tersebut-b-buatlah-contoh-analisis-pesaingpemasok-jika-pemerintah-daerah-di-kotakabupaten-tempat-anda-tinggal-bermaksud-mendirikan-sebuah-hotel-yang-penge">18.
+                                            a. Analisis kegunaan kedua bentuk analisa tersebut! b. Buatlah contoh analisis pesaing/pemasok jika Pemerintah Daerah di Kota/Kabupaten tempat anda tinggal bermaksud mendirikan sebuah hotel yang pengelolaannya dikerjasamakan dengan pihak swasta! 
+a. Dari studi kasus tersebut, mekanisme pemindahtanganan apa yang dilakukan oleh Provinsi 
+Semangat, kemukakan alasannya? 
+b. Kemukakan tata cara pemindahtanganan dengan mekanisme tersebut! 
+c. Selain tanah, jenis barang milik daerah apa saja yang dapat dilakukan dalam mekanisme 
+tersebut?
+Jasa mengerjakan tugas mhs UT semua makul Tuton dan tmk, di kerjain ulang agar terhindar dr kesamaan dan di cek plagiasi sampai 0% 
+jurusan hukum , guru, manajemen, ekonomi dll 
+Mengerjakan tugas akhir, skripsi , tesis dll japri aja ya +62 819-1313-7142</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sejak-bulan-maret-2020-virus-corona-mulai-menyebar-di-kota-padang-bidang-pendidikan-ikut-mengalami-hambatan-siswa-diharuskan-belajar-di-rumah-dengan-sistem-daring-dan-luring-salma-seorang-anak-mad">19.
+                                            Sejak bulan Maret 2020, virus corona mulai menyebar di kota Padang. Bidang pendidikan ikut mengalami hambatan. Siswa diharuskan belajar di rumah dengan sistem daring dan luring. Salma seorang anak Madrasah Tsanawiyah, tetap menyelesaikan tugas-tugasnya. Walapun dia tidak langsung berhadapan dengan gurunya. Salma yakin, virus corona yang menyerang kotanya, suatu saat akan berakhir. Perilaku Salma di atas merupakan contoh dari ?a. perilaku ikhlasb. perilaku sabarc. perilaku qana’ahd. perilaku tawakal​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hukum-dasar-baik-yang-tertulis-maupun-yang-tidak-tertulis-wajib-ditaati-oleh-seluruh-warga-negara-adapun-contoh-hukum-dasar-tidak-tertulis-yang-berlaku-dalam-kehidupan-bernegara-adalaha-pidato-pres">20.
+                                            Hukum dasar baik yang tertulis maupun yang tidak tertulis wajib ditaati oleh seluruh warga negara. Adapun contoh hukum dasar tidak tertulis yang berlaku dalam kehidupan bernegara adalah
+a. pidato presiden pada awal masa jabatannya di depan sidang umum MPR untuk memberikan sambutan setelah pelantikan
+b. pidato presiden pada akhir masa jabatannya untuk mempertanggung jawabkan tugasnya selama lima tahun
+c. pidato presiden di depan sidang paripurna DPR untuk memperingati HUT kemerdekaan R,I
+d. pidato presiden di depan sidang paripurna DPR untuk menjawab pertanyaan yang diajukan DPR</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-siswa-membuat-pantun-denganaturan-sebagai-berikut-a-terdiri-dari-8-sampai-dengan-12suku-katab-1-bait-terdiri-dari-4-baris-berisisampiran-dan-isic-jenis-pantun-bebasd-pantun-asli-buatan-sendiri">21.
+                                            5. Siswa membuat pantun denganaturan sebagai berikut :a. Terdiri dari 8 sampai dengan 12suku katab. 1 bait terdiri dari 4 baris berisisampiran dan isiC. Jenis pantun bebasd. Pantun asli buatan sendiri dengantema pendidikane. Suku kata terakhir harus samaantara baris 1-3 dan 2-4Contoh:Luas padang rerumputan,Ada domba banyak delapan.Pendidikan ibarat jembatan,jembatan menuju masa depan.f. Cukup membuat 1 buah pantunsaja.2 Tugas Kegiatan DASCA DAT tolong di jawab ya teman² plis yang jawab aku kasi bintang 50 pantun tema pendidikan ya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fahmi-berseteru-dengan-aji-karena-saling-berbeda-pendapat-tentang-tugas-kelompok-drama-salah-satu-guru-datang-menyelesaikan-perselisihan-kedua-siswanya-itu-guru-tersebut-berusaha-memberikan-solusi-d">22.
+                                            Fahmi berseteru dengan Aji karena saling berbeda pendapat tentang tugas kelompok drama. Salah satu guru datang menyelesaikan perselisihan kedua siswanya itu. Guru tersebut berusaha memberikan solusi dan menegur kedua siswanya agar konflik cepat selesai. Berdasarkan ilustrasi tersebut, proses penyelesaian konflik dilakukan melalui .....
+A. Arbitrasi
+B. Mediasi
+C. Ajudikasi
+D. Stalemate
+E. Kompromi
+Contoh Soal Ujian Akhir Sekolah PAT</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-sifat-yang-mencerminkan-kedisiplinanadalah-a-terlambat-datang-kesekolahb-bangun-pagi-dan-merapikan-tempattidurc-mengerjakan-tugas-paling-akhird-membuang-sampah-sembarangan6-contoh-kewajiban">23.
+                                            5. Sifat yang mencerminkan kedisiplinanadalah....A. Terlambat datang kesekolahB. Bangun pagi dan merapikan tempattidurC. Mengerjakan tugas paling akhirD. Membuang sampah sembarangan6. Contoh kewajiban di. sekolah adalah....A. menerima dana bosB. mengikuti pelajaranC. meminta dana bosD. taat kepada guru dan kepala sekolah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tugas-buatlah-contoh-kalimat-masing-2-kalimat-a-penggunaan-kalimat-perintahb-penggunaan-bentuk-pasifc-penggunaan-kriteriabatasand-penggunaan-kata-keterangan-adverbiae-menggunakan-kalimat">24.
+                                            Tugas : Buatlah contoh kalimat (masing, 2 kalimat) :a. Penggunaan Kalimat Perintahb. Penggunaan Bentuk Pasifc. Penggunaan Kriteria/Batasand. Penggunaan Kata Keterangan (adverbia)e. Menggunakan Kalimat Saran/Laranganf. Menggunakan Kata Penghubung, Pelesapan, Kata Acuang. penggunaan Akhiran -i dan akhiran -katolong ya kak semua di kalimatin masing" 2 ya kak ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#39-tang-bertugas-mengarahkan-dan-melatih-dalam-proses-latihan-teater-adalah-a-ketua-panitiad-aktorb-sutradarac-naskah40-latihan-terakhir-sebelum-pementasan-suatu-karya-seni-disebut-a-pra">25.
+                                            .39. Tang bertugas mengarahkan dan melatih dalam proses latihan teater adalah ...A ketua panitiaD. aktorB. sutradaraC. naskah40. Latihan terakhir sebelum pementasan suatu karya seni disebut.....A. pra-latihanB. gladi bersih C.gladi kotorD. bloking1. Tuliskan pengertian komik !2. Tuliskan penegertian cetak saring!3. Tuliskan contoh alat musik !a. Ritmisb. Melodisc. Harmonis4. Tuliskan unsur-unsur pendukung tari adalah !5. Jelaskan teknik merancang properti untuk pementasan pantomim !​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-perhatikan-ilustrasi-berikutsaat-jam-istirahat-karim-membeli-makanan-di-kantin-sekolah-usai-membayar-karinsegera-kembali-ke-kelas-tanpa-menghitung-uang-kembalian-dari-petugas-kantin-tibadkelas">26.
+                                            6. perhatikan ilustrasi berikut!Saat jam istirahat Karim membeli makanan di kantin sekolah. Usai membayar Karinsegera kembali ke kelas, tanpa menghitung uang kembalian dari petugas kantin. Tibadkelas Karim memeriksa uang kembalian, ternyata lebih dan terlalu banyak. Maka Karinsegera kembali ke kantin untuk mengembalikan kelebihan uang kepada petugas kantin.Perilaku Karim mencerminkan perilaku terpuji yaitu...و ولاتن فولادوعددراغون"A sabarB. JujurC. qana'ahD. IstiqamahoAyat di atas menjelaskan perilaku orang-orang yang memiliki sifat ....AsantunB. PemaluC. amanahD. Istiqamah8. Perhatikan pernyataan berikut:1. Fajar melaksanakan tugas sebagai ketua kelas dengan penuh tanggung jawab2. Gulam selalu bertahajjud secara kontinu setiap sepertiga malam terakhir3. Anis tidak meminta upah ketika diminta ibu membeli beras di toko4. Masliana selalu berkata yang sebenarnya saat menjadi saksi di pengadilanPemyataan di atas yang termasuk contoh perilaku Amanah dilakukan olehA FajarB. GulamC. AnisD. Masliana​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#islam-memerintahkan-umatnya-untuk-kerja-keras-dan-bertanggung-jawab-dalam-rangka-memenuhi-kebutuhan-hidupnya-dan-menjaga-keberlangsungan-hidup-manusia-berikut-merupakan-contoh-perilaku-kerja-keras-ya">27.
+                                            Islam memerintahkan umatnya untuk kerja keras dan bertanggung jawab dalam rangka memenuhi kebutuhan hidupnya dan menjaga keberlangsungan hidup manusia. Berikut merupakan contoh perilaku kerja keras yakni ... A mengerjakan pekerjaan B mengerjakan tugas sekolah saat waktunya sudah hampir berakhir C bekerja tidak mengenal waktu dan istirahat D bekerja untuk meningkatkan kesejahteraan E bersungguh-sungguh dalam berusaha agar meraih sukses​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yang-disifatkelasiii-tigapilihan-gandaberilah-tanda-silang-x-pada-huruf-di-depan-jawaban-yang-paling-benkd-3-210-toni-selalbelajar-dengan-giat-merupakan-contohtoni-memtanggung-jawab-kepadaa-so">28.
+                                            yang disifatKelasIII (Tiga)PILIHAN GANDABerilah tanda silang ( x ) pada huruf di depan jawaban yang paling benKD.3.210. Toni selalBelajar dengan giat merupakan contohToni memtanggung jawab kepadaa. sombona. Allah Swtc. diri sendinb. bijaksab. orang tuad. lingkunganKD. 3.102. Bersungguh-sungguh dalam melaksanakan 11. Pengertiatugas danbersedia menerima segala resiko atauakibat dari perbuatannya merupakan arti daridiakhira. sujuda. tawadukc. rendah hatib. salamb. rendah dirid. tanggung jawab123. Melaksanakan ibadah dengan sebaik-baiknyamerupakan contoh tanggung jawab kepadaa. Allah Swtc. diri sendirib. orang tuad. lingkungan4. Berbakti, taat dan patuh serta bersikap santuncontoh tanggung jawab kepada13. Geraka. Allah Swtc. diri sendiria. kirib. orang tuad. lingkunganb. kar5. Sakdiah selalu bersungguh-sungguh dalam 14. Sholamengerjakan tugas.Perbuatan Sakdiah termasuk ....a. sabarc. percaya dirib.mb. pedulid. tanggung jawab15. GeraKD. 3.5a. la5. Banyak sekali sifat terpuji salah satunya adalahb.besikap rendah hati, nama lain dari sikap rendah KD. 3.1hati adalah ...16. Nata. tawakalc. tawadukberh tawauton​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gagasan-pokok-ialah-utama-yang-dibahas-dalam-suatu-bacaan-a-ide-b-tugas-c-manfaat-d-pendukungcontoh-tanggapan-yang-positif-berkaitan-dengan-budaya-khas-di-indonesia-adalah-5-poina">29.
+                                            Gagasan pokok ialah .... utama yang dibahas dalam suatu bacaan. A. ide B. tugas C. manfaat D. pendukungContoh tanggapan yang positif  berkaitan dengan budaya  khas di Indonesia adalah ......(5 Poin)a. Melihat pertujukan tarian daerahb. Tarian saman sangat menarik dan enerjikc. Menurutsaya musik daerah kurang menarikd. Aku suka tarian dari luar negeriIde pokok paragraf kedua ada pada ....(5 Poin)a. awal paragrafb. tengah paragrafc. akhir paragrafd. awal dan akhir paragrafKegiatan yang sesuai atau terkait dengan gambar tersebut adalah ....(5 Poin)a. bermain-main air dengan adikb. membersihkan kamar mandic. menguras bak mandid. menggunakan air secukupnya saat mandi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dosen-menugaskan-anda-mengerjakan-tugas-akhir-dengan-judul-%e2%80%9dhubungan-tingkat-ekonomi-kotaterhadap-tingkat-ketahanan-kota-dalam-menghadapi-pandemi-diketahui-kedua-variabel-yangdigunakan-adal">30.
+                                            Dosen menugaskan Anda mengerjakan tugas akhir dengan judul ”Hubungan Tingkat Ekonomi Kota
+terhadap Tingkat Ketahanan Kota dalam Menghadapi Pandemi. Diketahui kedua variabel yang
+digunakan adalah interval/rasio.
+Berdasarkan contoh kasus penelitian di atas maka:
+a. Tentukanlah metode analisis apa yang tepat!
+b. Tentukanlah langkah-langkah dalam menganalisis!
+c. Tentukanlah perkiraan hasil analisis tersebut!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#di-bawah-ini-merupakan-contoh-interaksi-antara-kelompok-dengan-kelompok-kecuali-a-pertandingan-sepak-bola-antara-indonesia-melawan-malaysia-b-menyaksikan-konser-musik-dilapangan-bersama-dengan-teman-c">31.
+                                            Di bawah ini merupakan contoh interaksi antara kelompok dengan kelompok kecuali A pertandingan sepak bola antara indonesia melawan malaysia B menyaksikan konser musik dilapangan bersama dengan teman C ibu sedang membantu adik mengerjakan tugas sekolah D pertandingan bola voli antaf sekolah dasar TOLONG DI JAWAB YA AKU LAGI ULANGAN AKHIR SEMESTER 1 PLISS</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-pilihlah-jawaban-yang-tepatteks-puisi-berikut-untuk-soal-nomor-1-3dengan-seragam-oranye-kebanggaanmenyusuri-setiap-tujuanmeski-panas-bahkan-hujandengan-tulus-kauantarkandan-senyum-yang-mengiringi">32.
+                                            A. Pilihlah jawaban yang tepat!Teks puisi berikut untuk soal nomor 1-3!Dengan seragam oranye kebanggaanMenyusuri setiap tujuanMeski panas bahkan hujanDengan tulus kauantarkanDan senyum yang mengiringiMengusir sakit tubuh ini4.Puisi tersebut menggambarkan profesi5.a.6.Surat yang mereka nantikan1. Pilihan yang untuk melengkapi puisitersebut adalahDengan senyum kauberikanb. Tetap menjalankan tugasC. Demi orang yang menantid. Memberikan kebahagiaan2. Judul yang sesuai untuk puisi tersebutadalah ...a. "Surat"C. "Tugas Muliab. "Pak Pos d. "Tukang Antar3. Bunyi rima akhir larik pertama dankedua adalah ....an-anC. a-anb. an-kand. kan-anPenggalan puisi berikut untuk nomor 4 dan 5!Ketulusan hati yang mengobatiDengan tangan yang mengayomia. gurudokterb.petanid. polisiRima akhir larik ketiga dan keempatpuisi tersebut adalah ..ti-mii-nib. mi-id.Agung tinggal di kawasan pesisir pantai.Contoh makhluk hidup yang menjadipenghuni kawasan tersebut adalaha. bakau dan harimaub. kelapa dan anggrekC kerang dan rumput lautd. rumput laut dan gajahPerhatikan gambar berikut.7.Untuk menghasilkan buah tersebut,tanaman mangga harus mencapaitahapa. bijib. tunasc. mudad. dewasa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jenis-museum-berdasarkan-koleksi-yang-dimilikinya-dibedakan-menjadi-dua-jenis-yaitu-museum-umum-dan-museum-khusus-kutipan-teks-diatas-merupakan-contoh-kalimat-a-utamab-istilah-c-definisi-d-k">33.
+                                            1. Jenis museum berdasarkan koleksi yang dimilikinya dibedakan menjadi dua jenis yaitu museum umum dan museum khusus.Kutipan teks diatas merupakan contoh kalimat... A. UtamaB. Istilah C. Definisi D. Klasifikasi 2. Penggunaan kata baku yang tepat adalah... A. Obat yang terjamin sebaiknya dibeli di apotikB. Kualitas bibit bunga ini dapat dipertanggungjawabkan C. Dahulu kala bangunan mesjid di daerah ini belum terlalu banyakD. Gimana ya, kakak nggak mungkin ikut, hari ini banyak banget tugas3. Penggunaan kata tidak baku terdapat pada kalimat.. A.  Saya memiliki banyak aktivitas di sekolahB. Kegiatan seminar literasi akan diadakan bulan November C. Kakakku bercita cita menjadi atlet sepak bola profesional D. Penumpang mengantri di loket stasiun untuk membeli tiket kereta 4. Akhiran-akhiran dibawah ini berasal dari bahasa Arab kecuali... A. - iB. - iahC. - wiD. - isme5. Akhiran -man, -wan, dan -wati merupakan imbuhan asing yg berasal dari bahasa.. A. ArabB. Inggris C. SansekertaD. Belanda6. Kalimat yang tidak menggunakan imbuhan asing adalah... A. Anak itu mempunyai bakat alami. dimulai. B. Paman dikabari bahwa kakek sedang sakit. rasa. C. Program modernasi desa telah lamaD. Karyawan pabrik gula mengadakan unjuk</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#info-gugus-tugas-penangan-covid-19-menyatakan-bahwa-banyak-dari-kalangan-dokter-dan-perawat-yang-gugur-meninggal-dalam-melaksanakan-tugasnya-untuk-penanganan-dan-perawatan-penderita-positif-covid">34.
+                                            Info gugus tugas penangan Covid-19 menyatakan bahwa banyak dari kalangan dokter dan perawat 
+yang gugur (meninggal) dalam melaksanakan tugasnya untuk penanganan dan perawatan penderita 
+positif covid-19. Hal ini juga disampaikan kepada masyarakat agar selalu menjaga kesehatan dan 
+mengikuti protokol kesehatan dimanapun berada, diantaranya yaitu; menggunakan masker saat 
+berpergian dan juga mencuci tangan setiap sebelum dan sesudah beraktifitas. Dan diakhir 
+informasinya gugus tugas penanganan Covid-19 berharap agar kita selalu berdo’a kepada Tuhan 
+Yang Maha Esa agar pandemic ini cepat berlalu. Dari narasi singkat diatas menunjukkan contoh 
+kiamat . . .
+a. Sugra
+b. Kubra
+c. Surga
+d. Kuba</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#c-78410-perhatikan-keterangan-berikut1-kemampuan-memfokuskan-masalah-untukditelaah-secara-mendalam-2-kecakapan-melacak-dan-menelusurikebenaran-suatu-data-penelitian-keahlian-mengartikulasikan-ga">35.
+                                            c. 78,410. Perhatikan keterangan berikut!1) Kemampuan memfokuskan masalah untukditelaah secara mendalam.2) Kecakapan melacak dan menelusurikebenaran suatu data penelitian.Keahlian mengartikulasikan gagasan ke-dalam kalimat deskriptif.4) Kemampuan menguasai formula statistikuntuk mengolah data.5) Kemampuan menyusun kata dalam kalimatpertanyaan angket.Kemampuan yang harus dimiliki peneliti padasaat mengolah data kualitatif ditunjukkan olehangka ...a. 1), 2), dan 3)b. 1), 2), dan 4)c. 1), 2), dan 5)d. 2), 4), dan 5)e. 2), 3), dan 5)11. Pada laporan penelitian sosial sementara penelitibelum bisa memberikan keputusan final ataukesimpulan. Penarikan kesimpulan belum bisadilakukan oleh peneliti karenaa. batas waktu penelitian yang tidak panjangb. laporan sementara hanya sebagai formalitasc. data yang terkumpul masih belum lengkapd. narasumber yang tersedia kurang kompetenlaporan sementara seharusnya tidak memuatkesimpulan12. Contoh laporan penelitian formal yang tepatditunjukkan oleh pilihan yaitu ....a. skripsi, tesis, dan artikelb. skripsi, disertasi, dan makalahc. monografi, makalah, dan majalahd. jurnal ilmiah, tugas akhir, dan disertasie. jurnal ilmiah, makalah, dan tugas akhire.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tugasberdasarkan-teks-prosedur-mie-goreng-telur-puyuh-tentukanlah-hal-hal-sebagaiberikut1-a-bahan-bahan-bumbu-halus-dan-taburan-termasuk-struktur-teks-prosedurberupab-cara-membuat-dalam-teks-t">36.
+                                            Tugas:Berdasarkan teks Prosedur Mie goreng telur puyuh, tentukanlah hal-hal sebagaiberikut:1. a. Bahan-bahan, bumbu halus, dan taburan termasuk struktur teks prosedurberupab. Cara membuat dalam teks tersebut termasuk struktur teks prosedur bagian...c. Adakah bagian penutup dalm teks tersebut? Tuliskan!2. Tulislah bagian penutup teks prosedur3.4. Tuliskan masing-masing satu contoh kalimat yang berupa :a. Kalimat keterangan akibatb. Kalimat perintahc. Kalimat menyatakan waktu.d. Kalimat yang menggunakan akhiran-i dan kan.Tolong dibantu ya kak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-akhir-akhir-ini-wabah-flu-burung-mulai-merebak-lagi-penyebab-penyakit-ini-dipelajari-dalam-cabang-biologi-disebut-a-virologib-bakteriologic-parasitologid-embriologie-mikribiologi12-bi">37.
+                                            7. Akhir-akhir ini, wabah flu burung mulai merebak lagi. Penyebab penyakit ini dipelajari dalam cabang biologi disebut ......a. virologib. bakteriologic. parasitologid. embriologie. mikribiologi12. Biologi dimanfaatkan dalam bidang kedokteran. Salah satunya adalah transplantasijantung, mata, ataupun ginjal. Mata pada organisasi kehidupan, termasuk ....a. selb. organc. sistem organd. molekule. individu8. Struktur organisasi kehidupan yang paling kecil adalah ....a. populasib.organc. molekuld. sele. bioma9. Pernyataan yang tidak tepat tentang struktur organisasi kehidupan adalah kumpulan.....a. Sel membentuk jaringan.b. Organ membentuk individu.c. Jaringan membentuk organ.d. Individu membentuk populasi.e. ekosistem membentuk bioma10. Berikut ini yang merupakan contoh organisme tingkat jaringan adalah ....a. virusb. cacing tanahc. semutd. poriferae. kucing11. Koloni rayap terdiri atas bermacam-macam individu. Masing-masing mempunyai tugas tertentu. Di alam, koloni rayap tersebut merupakan suatu .a. komunitasb. populasic.  biomad. individue. ekosistem​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#merupakan-salah-satu-contoh-masalah-sosialpenyebab-terjadinya-kemacetan-lalu-lintasberdasarkan-sumber-daya-alam-yang-ada-di-lingkunganosseda-kompetensi-dasar-3-1-dan-4-1media-kering-untuk-m">38.
+                                            merupakan salah satu contoh masalah sosialpenyebab terjadinya kemacetan lalu lintas!berdasarkan sumber daya alam yang ada di lingkungan?osSeda&gt;&gt; Kompetensi Dasar: 3.1 dan 4.1Media kering untuk menggambar cerita adalahcat airtinta bakC.Buyung mendapat tugas untuk menggambar cerita mengenai banjir. Kemudiaiamenggunakan bolpoin untuk menggambar cerita tersebut. Gambar Buyakan menghasilkan karakter ... pada garis-garis.a. tegasb. lemahc. halusd. indahLangkah terakhir membuat gambar cerita adalahenentukan temaSebutkan dua (2) hal yang dapat dilakukan untuk meningkatkan exone​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantu-jawab-aku-kesusahan-buat-tugas-ini-tugas-bahasa-lampung-kelas-4-sdpertanyaan1-setelah-anda-identifikasi-apakah-kata-dasar-dan-kata-berimbuhan-itu-pertanyaan2-apakah-kata-dasarnya">39.
+                                            tolong bantu jawab  aku kesusahan buat tugas ini.. tugas bahasa lampung kelas 4 sdpertanyaan1. setelah anda identifikasi, apakah kata dasar dan kata berimbuhan itu ?pertanyaan2. apakah kata dasarnya, setelah imbuhannya dilepaskan pada kata-kata berikut! a. Ngeguwaib. Ngukurc. Ngawild. Nyuduie. Nuwilpertanyaan3. Tunjukan dengan contoh awalan nya/nye merupakan variasi awalan nga/nge !pertanyaan4. Tunjukan imbuhan berupa awalan ni/ne (A) atau no dan ke-3 fungsinya ! pertanyaan5. Tunjukkan penggunaan imbuhan berupa awalan atau akhiran dalam kalimat yang berikut ! a. (A) ya (akuk) buku (O) Yo (akuk) bukeub. Tiyan lagi (subuk) Tiyan lagei (subuk) c. (Ghupa) kawaghi sai ghatong(Upono) temui sai megeghudah itu aja ka..​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-pernyataan-yang-tepat-terkait-kandungan-q-s-al-hajj-ayat-7-adalah-a-hari-akhir-pasti-akan-datang-b-manusia-akan-binasa-pada-hari-akhir-c-alam-semesta-akan-hancur-berkeping-keping-d-hanya">40.
+                                            1. Pernyataan yang tepat terkait kandungan Q.S. al-Hajj ayat 7 adalah .... A. Hari akhir pasti akan datang B. Manusia akan binasa pada hari akhir C. Alam semesta akan hancur berkeping-keping D. Hanya Allah SWT yang mengetahui hari akhir 2. Peristiwa setelah hari akhir yang dijelaskan dalam ayat tersebut yaitu hari .... A. Penantian B. Perhitungan C. Kebangkitan D. Penimbangan 3. Perhatikan ayat berikut! كل نبس ذاءقة الموت Kullu nafsin dzaaiqotul mauut Ayat tersebut menjelaskan contoh kiamat sughra yang berupa ... A. Banjir B. Kematian C. gempa D. Longsor 4. Malaikat Israfil bertugas meniup sangkakala, tiupan sangkakala pertama menjadi tanda ..... A. Datangnya kiamat sughra B. Munculnya Dajjal al-Masih C. Munculnya dibangkitkan dari kubur D. Hancurnya seluruh alam semesta 5. Seluruh manusia akan dikumpulkan di Padang Mahsyar. Peristiwa yang dialami manusia saat itu yaitu ... A. Dihitung amal perbuatannya B. Menanti kedatangan hari akhirC. Ditimbang amal baik dan buruknya D. Menanti pengadilan dari Allah SWT 6. Perhatikan kutipan hadits berikut! ومن اراه د الآخرة فعليه بالعلم Wamanaroodal aakhiroti fha'alaihi bil'ilmi Sikap muslim yang menginginkan kebahagiaan akhirat yaitu .... A. Menaati perintah guru B. Menghormati kedua orang tua C. Melaksanakan sholat D. Menuntut ilmu dengan sungguh-sungguh 7. Perilaku mawas dari yang mencerminkan iman pada hari akhir ditunjukkan dengan.... A. Menyembunyikan permasalahan yang dimiliki B. Menolak bantuan yang diberikan orang lain C. Berbicara dengan sopan D. Tidak memercayai perkataan orang lain 8. Perilaku Ihsan Hakiki yang menunjukkan perilaku beriman pada hari akhir saat mengikuti ulangan bahasa Inggris dengan ..... A. Meninggalkan ruang ujian B. Menundukkan nafsu buruk yang dimiliki C. Meminta izin kepada guru untuk keluar D. Meminta izin mengikuti ujian pada hari lain 9. Perhatikan ayat berikut! يوم يكو ن أن الناس كاالفراش المبثوث Yaumayakuu nunnaasu kalfharoosyilmabtsuuts Ayat tersebut menjelaskan... A. Bumi diguncangkan dengan dahsyat B.manusia seperti laron yang beterbangan C. Gunung-gunung seperti bulu yang dihambur-hamburkan D. Bumi mengeluarkan beban-beban berat yang dikandungnya 10. Hikmah beriman pada hari akhir yang dirasakan oleh Fauzan Akbari dengan melaksanakan sholat adalah ... A. Meningkatkan semangat beribadah B. Menumbuhkan sikap peduli C. Memperoleh ketenangan hidup D. Memperoleh pertolongan Allah SWT​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="contoh-barang-tambang-mineral-logam-adalah-a-marmerb-tembaga-c-batu-barad-gas-alamtolongin-ada-tugas-ntar-malem-terakhir-jam-2100-ya-kaaa%e2%80%8b">
+                            1. contoh barang tambang mineral logam adalah.a. marmerb. tembaga c. batu barad. gas alamtolongin ada tugas ntar malem terakhir jam 21:00 ya kaaa​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b. tembaga</p><p><strong>Penjelasan:</strong></p><p>Berdasarkan Bentuknya</p><p></p><p>1. Berbentuk energi: minyak bumi, gas alam, batubara, uranium.</p><p></p><p>2. Berbentuk mineral logam: tembaga, bijih besi, emas, timah, nikel, perak.</p><p></p><p>3. Berbentuk mineral bukan logam: belerang, gamping, intan, fosfat, pasir kuarsa, marmer.</p><p></p><p></p><p><strong>Jawaban:</strong></p><p>b.tembaga</p><p><strong>Penjelasan:</strong></p><p>Tembaga adalah suatu unsur kimia dalam tabel periodik yang memiliki lambang Cu dan nomor atom 29. Lambangnya berasal dari bahasa Latin Cuprum. Tembaga merupakan konduktor panas dan listrik yang baik. </p><br />
+                                            <h2 class="ez-toc-section" id="tugas-cdiberikan-suatu-bilangan-yaitu-a-dan-b-dimana-a-merupakan-banyaknya-bilangan-yang-akan-diinput-dan-b-merupakan-bilangan-yang-akan-dicari-dari-inputan-bilangan-carilah-letak-bilangan-ke-b">
+                            2. Tugas C++
+Diberikan suatu bilangan yaitu A dan B, dimana A merupakan banyaknya bilangan yang akan diinput, dan B merupakan bilangan yang akan dicari dari inputan bilangan. 
+Carilah letak bilangan ke berapakah nilai dari B, apabila terdapat 2 atau lebih nilai B maka cetak urutan yang paling akhir.
+Contoh input:
+5 4
+5 6 4 1 5
+Contoh output:
+Bilangan ke-3
+Contoh input:
+5 4
+5 6 4 1 4
+Contoh output:
+Bilangan ke-5
+Buat dan rancanglah programnya!
+(ini tugas teman saya)</h2><br />
+                        Kode Program (C++)<p>// letak-bilangan-01.cpp<br />// oleh hy</p><p>/*<br />Diberikan suatu bilangan yaitu A dan B, <br />dimana A merupakan banyaknya bilangan <br />yang akan diinput, dan B merupakan <br />bilangan yang akan dicari dari inputan <br />bilangan. Carilah letak bilangan ke <br />berapakah nilai dari B, apabila terdapat <br />2 atau lebih nilai B maka cetak urutan <br />yang paling akhir.</p><p>Contoh input:<br />5 4<br />5 6 4 1 5<br />Contoh output:<br />Bilangan ke-3</p><p>Contoh input:<br />5 4<br />5 6 4 1 4<br />Contoh output:<br />Bilangan ke-5<br />*/</p><p>#include &lt;iostream&gt;<br />#include &lt;limits&gt;<br />using namespace std;</p><p>int main() {<br />    // Deklarasi variabel i, A dan B<br />    unsigned int i, A, B;</p><p>    // Input A dan B<br />    cout &lt;&lt; "Input A dan B: ";<br />    if ( !(cin &gt;&gt; A &gt;&gt; B) ) {<br />        return 1;<br />    }</p><p>    // clear input buffer<br />    // Berguna jika pada input pertama<br />    // user menginputkan lebih dari 2 bilangan<br />    cin.clear();<br />    cin.ignore(numeric_limits&lt;streamsize&gt;::max(), '\n');</p><p>    // Deklarasi variabel larik_bilangan<br />    // dengan ukuran A.<br />    // Deklarasi di sini dimaksudkan agar <br />    // secara efisien mengalokasi memori<br />    // untuk array larik_bilangan.<br />    // Jika dilakukan di awal program, <br />    // kita harus mendefinisikan ukurannya,<br />    // yang belum diketahui sampai nilai A<br />    // diperoleh dari input.<br />    int larik_bilangan[A];</p><p>    // Input bilangan sebanyak A<br />    cout &lt;&lt; "Input " &lt;&lt; A &lt;&lt; " bilangan: ";<br />    for (i = 0; i &lt; A; i++) {<br />        cin &gt;&gt; larik_bilangan[i];<br />    }</p><p>    // Cari bilangan B pada larik_bilangan<br />    // mulai dari urutan/indeks terakhir,<br />    // karena jika terdapat duplikasi, yang<br />    // dicetak adalah urutan paling akhir.<br />    i = A;<br />    while ((i &gt; 0) &amp;&amp; (larik_bilangan[i-1] != B)) {<br />        // Dari elemen terakhir, selama tidak<br />        // sama dengan B, dekrementasi i.<br />        i--;<br />    }</p><p>    // Jika i == 0, maka B tidak ditemukan.<br />    // Sebaliknya, B ditemukan, outputkan i.<br />    if (i == 0) {<br />        cout &lt;&lt; "=&gt; " &lt;&lt; B<br />            &lt;&lt; " tidak ditemukan.\n\n";<br />    } else {<br />        cout &lt;&lt; "=&gt; " &lt;&lt; B<br />            &lt;&lt; " adalah elemen ke-" &lt;&lt; i<br />            &lt;&lt; ".\n\n";<br />    } </p><p>    return 0;<br />}<br />_________________</p>Pembahasan<p>Untuk persoalan ini, secara garis besar, algoritmanya adalah sebagai berikut.</p>Input bilangan A dan B.Input larik/array bilangan berukuran A.Cari bilangan B pada larik, mulai dari urutan terakhir sampai yang pertama.Jika B tidak ditemukan, cetak informasi bahwa B tidak ditemukan.<br />Sebaliknya, cetak indeks dari B.<p>Penelusuran nilai B pada larik/array dilakukan dari urutan terakhir karena jika terdapat duplikasi dari nilai B pada larik, cetak urutan/indeks terakhir.</p>Jika kita menelusuri dengan iterasi dari elemen pertama, maka iterasi tetap harus dilakukan sampai semua elemen larik dievaluasi.Namun, jika kita lakukan sebaliknya (dari urutan terakhir), maka hanya cukup sampai menemukan nilai B yang pertama saja (terhitung dari elemen terakhir larik).<p>Untuk kasus di mana nilai B terdapat dalam larik, jelas cara penelusuran kedua membutuhkan iterasi yang lebih sedikit.<br />Pada kasus terburuk, di mana nilai B tidak terdapat dalam larik, banyak iterasi yang perlu dilakukan pada kedua cara penelusuran tersebut adalah sama.</p><p>Pada program di atas, sudah saya tambahkan keterangan dalam bentuk comment, dengan harapan akan lebih memudahkan untuk membaca dan memahami programnya.</p>Contoh hasil eksekusi<p>(dapat juga dilihat pada gambar tangkapan layar)</p>$ ./letak-bilangan-01<br /><strong>Input A dan B: 5 4<br />Input 5 bilangan: 5 6 4 1 5<br />=&gt; 4 adalah elemen ke-3.</strong>$ ./letak-bilangan-01<br /><strong>Input A dan B: 5 4<br />Input 5 bilangan: 5 6 4 1 4<br />=&gt; 4 adalah elemen ke-5.</strong>$ ./letak-bilangan-01<br /><strong>Input A dan B: 5 3<br />Input 5 bilangan: 1 2 3 3 2<br />=&gt; 3 adalah elemen ke-4.</strong>$ ./letak-bilangan-01<br /><strong>Input A dan B: 5 0<br />Input 5 bilangan: 1 2 3 4 5<br />=&gt; 0 tidak ditemukan.</strong><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-secara-ringkas-apa-yang-dimaksud-dengan-persaingan-harga-dan-persaingan-non-harga-berikan-masing-masing-contohnya2-a-jelaskan-secara-ringkas-apa-yang-dimaksud-dengan-eksternalitas-b-b">
+                            3. 1. jelaskan secara ringkas apa yang dimaksud dengan persaingan harga dan persaingan Non-harga, berikan masing-masing contohnya2. a. jelaskan secara ringkas apa yang dimaksud dengan Eksternalitas, b. berikan 1 contoh Eksternalis Postif, c. berikan 1 contoh Eksternalitas Negatif beserta usulan solusinya?tolong kerjain tugas dong hari ini terakhir dikumpulin terima kasih​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>a)<strong>Persaingan Harga</strong> adalah persaingan menentukan harga barang dagangan oleh pedagang sebagai upaya merebut pasaran dan memukul pesaing dagangnya.</p><p><strong>Persaingan Non Harga</strong> adalah usaha penjual untuk mempengaruhi pembeli tanpa potongan harga (diskon).</p><p></p><p>b) * <strong>Eksternalitas</strong> adalah efek samping tindakan pihak tertentu terhadap pihak lain, baik dampak  menguntungkan maupun merugikan.</p><p></p><p>*<strong>Contoh Eksternalitas Positif</strong> yaitu Vaksinasi =&gt; Manfaat tidak hanya bagi orang yang divaksinasi tapi juga pada orang lain karena risiko penularan menurun.</p><p>*<strong>Contoh Ekternalitas Negatif </strong>yaitu Merokok =&gt; menghasilkan efek negatif tidak hanya bagi perokok tetapi tetapi juga bagi kesehatan orang lain di sekitar perokok (perokok pasif). </p><p>Solusinya dengan cara berhenti merokok dan ganti dengan kegiatan yang positif seperi olah raga senam dll.</p><p></p><p>#SemogaBermanfaatKakak</p><br />
+                                            <h2 class="ez-toc-section" id="lsiswa-kelas-vi-c-sedang-bermusyawarah-untuk-membicarakan-persiapan-mengikuti-kegiatanhari-pasar-yang-akan-diadakan-di-sekolah-semua-siswa-mengikuti-jalannya-musyawarahdengan-tertib-siswa-yang-ingin">
+                            4. lSiswa kelas VI C sedang bermusyawarah untuk membicarakan persiapan mengikuti kegiatanhari pasar yang akan diadakan di sekolah. Semua siswa mengikuti jalannya musyawarahdengan tertib. Siswa yang ingin memberikan pendapat diberikan kesempatan untukmenyampaikan pendapatnya. Meskipun berbeda pendapat, semua siswa tetap mendengarkandan menghargai pendapat temannya. Pada akhir musyawarah dicapai kesepakatan tentang jenisbarang yang akan dijual dan pembagian tugas yang harus mereka lakukan. Tidak semua siswasetuju dengan keputusan itu, tapi mereka tetap menerima hasil musyawarah dengan baik.Jelaskan 3 contoh penerapan nilai-nilai demokrasi dalam peristiwa tersebut!​</h2><br />
+                        <p><strong>Jawaban:</strong></p>bekerja samasaling menghormatimenghargai pendapat orang lainTidak memaksakan Kehendak Kepada Orang LainMenerima Keputusan MusyawarahMelaksanakan Keputusan dengan Bertanggung Jawab<p><strong>Penjelasan:</strong></p><p>Jangan lupa bintangnya :)</p><br />
+                                            <h2 class="ez-toc-section" id="1-migrasi-harian-disebut-juga-mobilitas-ulang-alik-contoh-kegiatan-mobilitas-ulang-alik-adalah-a-karyawan-bekerja-pada-perusahaan-dengan-tugas-berkeliling-ke-kota-kota-diseluruh-pelosok-negerib">
+                            5. 1. Migrasi harian disebut juga mobilitas ulang-alik. Contoh kegiatan mobilitas ulang-alik adalah...a. Karyawan bekerja pada perusahaan dengan tugas berkeliling ke kota-kota diseluruh pelosok negerib. Karyawan sebuah perusahaan swasta di Jakarta yang bermukim di Bogorsetiap hari pulang pergi menggunakan kereta api komuterc. Karyawan yang bekerja di suatu kota kembali ke daerah asalnya pada akhirpekand. Pedagang sayuran dari daerah pegunungan setiap hari menjualdagangannya di pasar desa di kaki pegunungane. Petani menjadi pekerja lepas di perkotaan selama beberapa waktu selamamenunggu masa tanam dimulai.​</h2><br />
+                        <p><strong>Jawaban : Contoh kegiatan mobilitas ulang alik adalah saat pagi hari Johan bekerja di kantor di daerah perkotaan lalu pada saat jam 5 sore hari ia pulang ke desa.
+</strong></p><p><strong>
+</strong></p><p><strong>Pembahasan
+</strong></p><p><strong>Hallo adik adik sahabt brainly, balik lagi kita yahh ke materi geografi !! Gimana nih adik adik masih semangat belajar kan yaa ? Masih dongg ya hehe. Yukk langsung aja kakak jelasin materi tentang geografi.
+</strong></p><p><strong>
+</strong></p><p><strong>MIGRASI EKSTERNAL, terdiri dari yaitu
+</strong></p><p><strong>
+</strong></p><p><strong>a.Imigrasi merupakan perpindahan penduduk untuk memasuki negara lain.
+</strong></p><p><strong>
+</strong></p><p><strong>b.Emigrasi merupakan perpindahan penduduk keluar dari suatu wilayah negara tertentu.
+</strong></p><p><strong>
+</strong></p><p><strong>c.Remigrasi merupakan proses kembalinya warga negara yang pernah meninggalkan negaranya.
+</strong></p><p><strong>
+</strong></p><p><strong>Faktor pendorong imigrasi adalah  
+</strong></p><p><strong>
+</strong></p><p><strong>1.Adanya diskriminasi politik, agama, suku di daerah asal
+</strong></p><p><strong>
+</strong></p><p><strong>2.Semakin sempit lapangan pekerjaan di daerah asal, akibat dari masuknya teknologi yang menggunakan mesin mesin
+</strong></p><p><strong>
+</strong></p><p><strong>3.Berkurangnya sumber sumber alam
+</strong></p><p><strong>
+</strong></p><p><strong>4.Tidak cocok dengan adat budaya di daerah asal
+</strong></p><p><strong>
+</strong></p><p><strong>5.Alasan pekerjaan atau perkawinan yang menyebabkan tidak bisa mengembangkan karir pribadi
+</strong></p><p><strong>
+</strong></p><p><strong>Sedikit yang dapat saya jelaskan tentang materi geografi hari, semoga dapat bermanfaat yaa.
+</strong></p><p><strong>
+</strong></p><p><strong>Pelajari Lebih Lanjut:
+</strong></p><p><strong>Adik-adik semua masih kepingin belajar materi geografi kan? Yuk adik-adik cek link di bawah ini yaa!!!  
+</strong></p><p><strong>
+</strong></p><p><strong>1.Materi tentang faktor pendorong imigrasi, cek link berikut ini yaa brainly.co.id/tugas/11137224
+</strong></p><p><strong>
+</strong></p><p><strong>2.Materi tentang faktor penghambat natalitas, cek link berikut ini yaa brainly.co.id/tugas/1399057
+</strong></p><p><strong>
+</strong></p><p><strong>3.Materi tentang bonus demografi,cek link berikut ini yaaa brainly.co.id/tugas/10341422
+</strong></p><p><strong>
+</strong></p><p><strong>Detail Jawaban
+</strong></p><p><strong>Kelas: 11
+</strong></p><p><strong>
+</strong></p><p><strong>Mapel: Geografi
+</strong></p><p><strong>
+</strong></p><p><strong>Bab : Bab 5 - Dinamika Kependudukan  
+</strong></p><p><strong>
+</strong></p><p><strong>Kode : 11.8.2005
+</strong></p><p><strong>
+</strong></p><p><strong>Kata Kunci: imigrasi, komutasi, sirkulasi</strong></p><p></p><p></p><p></p><p><strong>Jawaban:</strong></p><p>B. Karyawan sebuah perusahaan swasta di Jakarta yang bermukim di Bogor setiap hari pulang pergi menggunakan kereta api komuter </p><p></p><p></p><p>maaf kalau salah </p><br />
+                                            <h2 class="ez-toc-section" id="%e2%9c%b4%ef%b8%8ftugas-hari-ini-adalah-menulis-kembali-soal-dan-jawaban-dalam-buku-tulis-kalian-berilah-tanda-silang-pada-hurup-a-b-c-dan-d-yang-tepat-1-hari-akhir-dibagi-menjadi-berapa-jenis-a">
+                            6. ✴️tugas hari ini adalah menulis kembali soal dan jawaban dalam buku tulis kalian. berilah tanda silang pada hurup a, b, c, dan d yang tepat. 1. Hari akhir dibagi menjadi berapa jenis a.1 b. 2 c. 3 d. 4 2.) kiamat kecil disebut juga kiamat... a. kubro b. besar c. sedang d. cukup 3.) kiamat kubro merupakan kiamat... a. besar b. kecil c. sedang d. cukup 4.) contoh kiamat kecil adalah.. a. sakit perut b. longsor c. banjir d. hujan 5.) gunung meletus adalah contoh kiamat... a. kubro b. besar c. akhir zaman d. sugro 6.) kelalaian siapakah yang biasanya menyebabkan banjir... a. masyarakat b. selokan c. hujan d. manusia 7.) kebakaran yang sangat besar merupakan contoh kiamat... a. kubro b. besar c. akhir zaman d. kecil 8.) pada surat apakah yang menceritakan kondisi kiamat besar... a. al-zalzalah b. at-takatsur c. al-kafiruun d. al-fiil 9.) Tanda-Tanda kiamat besar adalah... a. gunung meletus b. laut meluap c. gunung terbang d. air laut naik ke darat 10.) planet-planet bertabrakan adalah contoh kiamat... a. kubro b. sugro c. akhir zaman d. kecil selamat mengerjakan. akan lebih baik bila orang tua menjadi pendamping dan meminta ananda mengerjakan sendiri. terimakasih.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah karna jawabanya ndak satu2</p><br />
+                                            <h2 class="ez-toc-section" id="bahasa-indonesia-kd-3-31-berilah1sudinpetugasudinpetugasa2-oberilah-tanda-silang-x-pada-salah-satu-a-b-c-atau-d-pada-pilihan-jawaban-yang-benarperhatikan-percakapan-wawancara-berikut-inipak-m">
+                            7. Bahasa Indonesia (KD 3.3)1.Berilah1SUdinPetugasUdinPetugasa2.oBerilah tanda silang (x) pada salah satu a, b, c atau d pada pilihan jawaban yang benarPerhatikan percakapan wawancara berikut ini!"Pak, mengapa akhir-akhir ini beberapa wilayah Indonesia dilanda banjir?""Banjir itu terjadi karena beberapa penyebab.": "Contoh penyebabnya apa?""Misalnya sering membuang sampah sembarangan hingga menyumbat saluran air,seperti selokan atau sungai, selain itu karena menebang pohon secara berlebihansehingga daerah serapan air berkurang"Udin "Apakah kita bisa mencegah banjir Pak?"Petugas: "Tentu saja bisa Udin. Salah satunya dengan menyadari pentingnya menjagakebersihan lingkungan, seperti tidak membuang sampah sembarangan danmengusahakan penanaman pohon kembali".Udin : "O, ternyata seperti itu. Pak. Terima kasih atas penjelasannya".1. Tema wawancara petugas dan Udin adalah3. Kesimpulan isi wawancara tersebut adalaha. akhir-akhir ini beberapa wilayah Indone-a. peristiwa banjirsia dilanda banjirb. kesehatan lingkunganb. kita harus menjaga lingkungan untukc. kebersihan rumahmencegah banjird. lingkungan yeng tercemarkita harus bersama-sama mampu2. Salah satu faktor penyebab banjir darimemperbaiki kondisi lingkunganwawancara di atas adalah ....d. banyak penyebab banjir yang berdampaka. mengadakan reboisasibagi keadaan lingkunganb. mengadakan sistem terasering ditanah miringc. membuang sampah sembarangand. membakar sampah3. Kesimpulan isi Wawancara tersebut adalah A akhir-akhir ini beberapa wilayah Indonesia dilanda banjirB kita harus menjaga lingkungan untuk mencegah banjirC kita harus bersama-sama mampu memperbaiki kondisi lingkungandek banyak penyebab banjir yang berdampak bagi keadaan lingkungan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kita harus menjaga lingkungan untuk mencegah banjir</p><br />
+                                            <h2 class="ez-toc-section" id="niterakhirbantu-ya-a-tulis-pakai-huruf-jepang1-aku-pergi-menuju-bus2-aku-naik-masuk-bus3-aku-berdiri-di-bus4-aku-turun-dari-busketerangan-itu-yang-ada-bintang-dua-contohnya">
+                            8. Ni,terakhir,bantu ya.........A. Tulis Pakai huruf Jepang1. AKU PERGI *MENUJU* BUS2. AKU NAIK *MASUK* BUS3. AKU BERDIRI *DI* BUS4. AKU *TURUN DARI* BUSKeterangan =  itu yang ada bintang dua contohnya *DI* berarti huruf/kalimatnya tebal,aku ga tau kenapa tebal:))B. Bahasa Jepangnya KAMU SUKA JEPANGAKU JUGA SUKA JEPANGC. BUATLAH CONTOH KATA MAJEMUK DALAM BAHASA JEPANG DAN SERTAKAN ARTINYA (  ARTINYA DALAM BAHASA INDONESIA )BANTU SEBAGIAN TUGASKU KA,KALAU BISA JANGAN TRANSLETAN APLIKASI PENERJEMAH ATAU GOOGLE,KARENA BELUM TENTU BENAR:))ARIGATO YA YANG JAWAB PERTANYAANKU...​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>A</strong></p><p>1.バスに行きました</p><p>2.バスに乗った</p><p>3.私はバスに立っています</p><p>4.バスを降りた</p><p><strong>B</strong></p><p>あなたは日本が好きです</p><p>私も日本が好きです</p><p><strong>Jawaban:</strong></p><p><strong>A</strong><strong>.</strong></p><p>1. バスに行きました</p><p></p><p>2. バスに乗った</p><p></p><p>3. 私はバスに立っています</p><p></p><p>4. バスを降りた</p><p></p><p><strong>B</strong><strong>.</strong></p><p>あなたは日本が好きです</p><p>私も日本が好きです</p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat ya</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-bantu-tugas-aku-kak-secepatnya-klo-bisa-sekarang1-di-bawah-ini-yang-merupakan-proses-pengolahan-limbah-lunak-adalah-sebagai-berikut%e2%80%a6a-pembelian-limbah-lunak-dari-vendorb-penjualan-li">
+                            9. tolong bantu tugas aku kak secepatnya klo bisa sekarang1. Di bawah ini yang merupakan proses pengolahan limbah lunak adalah sebagai berikut…A. Pembelian limbah lunak dari vendorB. Penjualan limbah lunak kepada konsumen akhirC. Pengeringan limbah lunakD. Pengemasan produk dari limbah lunak2.Proses pembuatan kerajinan dari jerami salah satunya adalah dengan pemanasan. Pemanasan dapat dilakukan dengan menggunakan…A. Kompor gas tekanan tinggiB. OvenC. Lilin bakarD. Pemanggang3.Barang-barang yang sudah tidak berguna didaur ulang lagi. Tidak semua barang bisa didaur ulang, tetapi saat ini sudah banyak industri kecil dan industri rumah tangga yang memanfaatkan sampah menjadi barang lain contohnya kerajinan.prinsip tersebut adalah...A. reuseB. recycleC. reduseD. resepsi4. Meminimalisir barang atau material yang kita pergunakan. Semakin banyak kita menggunakan material, semakin banyak sampah yang dihasilkan.prinsip tersebut adalah...A. reduceB. reuseC. recycleD. reboisasi5. Contoh hasil karya yang mungkin dihasilkan dari limbah kertas adalah ...A. pigura fotoB. tempat nasiC. peralatan dapurD. gantungan kunci6. Salah satu produk pengolahan limbah organik yang dapat terurai adalah ...A. komposB. biomasaC. biogasD. biopori​</h2><br />
+                        Jawaban:<br />1.c<br />2.d<br />3.a<br />4.d<br />5.a<br />6.a<br /><br /><p> </p><p>1.C.pengeringan limbah lunak</p><p></p><p>2.C.lilin bakar</p><p></p><p>3.A.reuse</p><p></p><p>4.A.reduce</p><p></p><p>5.A.pigura foto</p><p></p><p>6.SAMPAH ORGANIK</p><p></p><p>adalah jenis sampah yang dapat  mengalami pelapukan atau dekomposisi sehingga terurai menjadi bahan lain yang lebih kecil dan tak berbau (seringnya disebut dengan istilah kompos). </p><p></p><p>SAMPAH ANORGANIK</p><p>sampah jenis ini adalah  sampah yang berasal dari bahan-bahan non-hayati, bisa berupa produk sintetis, bahan tambang dan lain sebagainya. </p><p></p><p>semoga bermanfaat, maaf kalo ada salah satu yang salah</p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="%d9%8a%d9%88%d9%85%d8%a7-a%d9%88%d8%a7%d9%84%d8%a7%d9%83%d8%b1%d8%a7%d9%85%d9%88%d8%b4%d9%81%d8%aa%d9%8a%d9%86-c%d9%86%d8%b3%d8%a7%d8%a1-dlllmdlraberilah-tanda-silang-x-pada-huruf-a-b-c-atau-d-p">
+                            10. يوما aوالاكراموشفتين Cنساء .dLLLMDLRABerilah tanda silang (x) pada huruf a, b, c, atau d pada jawaban yang benar!1. Huruf jim berharkat Fathatain dibaca waqaf, disebut bacaan mada. arid lissukun Kiwadc. layyind. wajib muttasil2. Berikut ini yang termasuk contoh bacaan mad ari lissukun adalahb.3. Huruf yang berharkat fathah bertemu dengan huruf ya sukun dan dibaca waqaf,disebut bacaan mad ...a. arid lissukun b. iwadc. layyind. wajib muttasil)a. arid lissukun b. iwadc. layyind. wajib muttasil5. Jika mad asli berada di akhir ayat, namun tidak dibaca waqaf, maka disebut mad ...a. arid lissukun b. iwadc. layyind. asli6. Berikut ini yang termasuk contoh bacaan mad layyin adalah ...b.7. Berikut ini yang bukan merupakan contoh mad iwad adalah ..... adalah contoh hukum bacaan mad (نساء) Lafad.4.ديوما ووالاكرامCوشفتين )يومامغفرة م .bCشيئانساء و .dدم دم... adalah contoh bacaan Mad (وفرعون ) Lafad.98. Cara membaca bacaan mad arid lissukun yang lebih sempurna adalah ..a. 2 harkatb. 4 harkat6 harkatd. 1 harkat9. ( )a. arid lissukun b. iwadc. layyind. wajib muttasil10. Berikut ini yang bukan termasuk contoh bacaan mad arid lissukun adalahb.C,d..ملك الناس .aتقويمقریشيفعلون هم .dTolong di bantu jawab tugas sekarang​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawabannya no 8 ialah yang 6 harkat </p><p>Maaf ya bila salah </p><br />
+                                            <h2 class="ez-toc-section" id="10-b-ind-simpulan-merupakan-akhir-dari-uraian-panjang-suatu-bacaan-atau-teks-a-opini-b-fakta-11-ppkn-berikut-yang-merupakan-contoh-penerapan-sila-keempat-pancasila-adalah-c-ikhtisar">
+                            11. 10. (B. Ind) Simpulan merupakan... akhir dari uraian panjang suatu bacaan atau teks. a. opini b. fakta 11. (PPKn) Berikut yang merupakan contoh penerapan sila keempat Pancasila adalah ... c. ikhtisar d. pendapat a. mengumpulkan sumbangan untuk korban banjir b. tidak memaksakan pendapat ketika berdiskusi C. menghormati agama dan kepercayaan teman d. membagi tugas kelompok dengan adil 12. (SBDP) Setelah membuat gambar sketsa, tahap selanjutnya dalam pembuatan patung adalah .... a. memilih bahan b. menggambar sketsa C. menentukan teknik pembuatan d. memamerkan patung yang sudah dibuat 3. (IPS) Persamaan kondisi geografis negara Indonesia dan Filipina adalah 1 (PPKn) Tuliskan tiga contoh pengamatan sila kelima Pancasila dalam kehidupan sehari-hari​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>10= b. fakta </p><p>11 = b. tidak memaksakan pendapat ketika berdiskusi</p><p>12= a. memilih bahan</p><p>1 = 1) mengikuti adanya kegiatan gotong royong </p><p>     2) peduli terhadap orang lain</p><p>     3) suka menolong orang lain</p><p>3= sama-sama berbentuk negara kepulauan</p><br />
+                                            <h2 class="ez-toc-section" id="soal-ujian-akhir-semester-pkn-sma-26-korupsi-adalah-dengan-sengaja-melakukan-kesalahan-atau-melalaikan-tugas-dengan-tujuan-memperkaya-diri-sendiri-atau-kelompok-di-bawah-ini-adalah-contoh-korupsi-y">
+                            12. Soal ujian akhir semester PKN SMA: 26. Korupsi adalah dengan sengaja melakukan kesalahan atau melalaikan tugas dengan tujuan memperkaya diri sendiri atau kelompok. Di bawah ini adalah contoh korupsi yang dilakukan oleh pejabat negara adalah….
+ a. Kasus Antasari Ashar
+ b. Kasus Perampokan Bank di Medan
+ c. Kasus Bank Century
+ d. Kasus Mantan Gubernur Aceh Abdulah Puteh
+ e. Kasus investor PT Anta Boga.</h2><br />
+                        d. kasus mantan gubernur aceh abdulah puteh<br />
+                                            <h2 class="ez-toc-section" id="salah-satu-kopi-favorit-saya-adalah-kopidengan-rasa-irish-yang-dijual-di-salah-satukedai-kopi-di-kota-kelahiran-saya-ini-kedai-kopitersebut-tidak-terlalu-besar-tapi-memiliki-cita-rasakopi-yang-nikmat">
+                            13. Salah satu kopi favorit saya adalah kopidengan rasa irish yang dijual di salah satukedai kopi di kota kelahiran saya ini. Kedai kopitersebut tidak terlalu besar tapi memiliki cita rasakopi yang nikmat. Irish kopi memiliki rasa yangunik. Dengan rasa manis di awal dan pahit diakhir membuat saya cukup kecanduan untukmengkonsumsinya sebagai salah satu temanuntuk mengerjakan tugas.Paragraf di atas merupakan contoh teksdeskripsi bagian jenis ...a. deskripsi bagian pemfokusanb. deskripsi bagian berdasarkan ruangc. deskripsi bagian berdasarkan prosessesuatu berlangsungd. deskripsi bagian berdasarkan anggotabagian-bagian objek​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a) deskribsi bagian pemfokusan</p><br />
+                                            <h2 class="ez-toc-section" id="tugas-btq-kelas-71-carilah-pengertiana-mad-shilah-qashirahb-mad-shilah-tawilahc-mad-badald-mad-tamkine-mad-lin2-tulis-contohnya-5-masing2-madayo-ges-cepet-terakhir-nanti-siang-soalnya">
+                            14. Tugas BTQ KELAS 71. CARILAH PENGERTIANA. MAD SHILAH QASHIRAHB . MAD SHILAH TAWILAHC. MAD BADALD. MAD TAMKINE. MAD LIN2. TULIS  CONTOHNYA 5 MASING2 MADayo ges cepet, terakhir nanti siang soalnya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Pengertian:</strong></p><p><strong>a)</strong><strong>.</strong><strong>MAD </strong><strong>SHILAH </strong><strong>QASHIRAH </strong>ialah mad yang terjadi apabila ada ha dlomir yang berharakat dhamah atau berharakat kasrah ( هِ/هُ) yang sebelumnya berupa huruf hidup dan setelahnya berubah huruf hidup selain huruf hamzah (ء).</p><p><strong>PANJANG </strong><strong>BACAANNYA </strong>adalah 1 Alif atau 2 harakat.</p><p><strong>CONTOH:</strong> لَهُ مَا، تاَخُذُهُ سنةٌ، بِهِۦ نَقْعًا،بِهِۦ جَمْعًا،لِرَبِّهِۦ لَكَنُودٌ</p><p><strong>b.</strong><strong>)</strong><strong>MAD </strong><strong>SHILAH </strong><strong>TAWILAH </strong>ialah mad yang terjadi apabila ada dhamir yang berharakat dhammah atau berharakat kasrah (هِ/هُ) yang sebelumnya berupa huruf hidup dan setelahnya berubah huruf hamzah (ء).</p><p><strong>PANJANG </strong><strong>BACAANNYA:</strong> 2 alif setengah atau 5 harakat.</p><p><strong>CONTOH:</strong> بِهِ أَنْفُسَهُمْ,تَأْوِيلَهُ إِلَّا اللَّهُ,وَضَعْتُهَا أُنْثَىٰ,بِهِ إِيمَانُكُمْ,مَالَهُۥٓ أَخْلَدَهُ</p><p><strong>c.</strong><strong>)</strong><strong>MAD </strong><strong>BADAL </strong>ialah penggantian huruf hamzah (ء) mati dengan huruf alif (ا), ya (ئ), atau wau (ؤ) yang disesuaikan dengan harakat huruf sebelumnya. Cara membacanya adalah dengan dipanjangkan <strong>satu alif atau dua harakat.</strong></p><p><strong>CONTOH:</strong><strong> </strong>ٱلْأُولَىٰ,أُوتُوا۟,ءَانِيَةٍ,وَءَامَنَهُمْ,ءَامَنَ</p><p><strong>d.</strong><strong>)</strong><strong>MAD </strong><strong>TAMKIN </strong>ialah mad yang terjadi apabila ada huruf ya' bertasydid dan berharakat kasrah bertemu dengan huruf ya sukun dalam satu kata.</p><p><strong>panjang bacaannya</strong><strong>:</strong><strong> satu Alif atau dua harakat</strong><strong>.</strong></p><p><strong>CONTOH:</strong><strong> </strong><strong>عِلِّيِّيْنَ</strong><strong>,</strong><strong>النَّبِيّٖنَ,</strong><strong>حُيِّيتُمْ,</strong><strong>وَالْاُمِّيّٖنَ</strong><strong>,</strong><strong>وَلِيِّي</strong></p><p><strong>e.</strong><strong>)</strong><strong>MAD </strong><strong>LIN </strong>ialah mad yang terjadi apabila ada wawu mati atau ya' mati yang terletak setelah huruf berbaris fathah.</p><p><strong>PANJANG </strong><strong>BACAANNYA</strong><strong>:</strong> dua harakat (1 alif) atau enam harakat (3 alif).</p><p><strong>CONTOH:</strong><strong> </strong><strong>خَيْرٌ</strong><strong>,</strong><strong>بَيْنَهُمْ</strong><strong>,</strong><strong>خَوۡفٍ</strong><strong>,</strong><strong>يَوْمًا,</strong><strong>عَلَيْكَ</strong></p><p><strong>Penjelasan:</strong></p><p><strong>SEMOGA </strong><strong>MEMBANTU</strong></p><p><strong>FOLLOW </strong><strong>YAAA</strong></p><br />
+                                            <h2 class="ez-toc-section" id="andi-seorang-siswa-yang-rajin-belajar-andi-bernagkat-sekolah-pagi-pagi-dengan-penuh-semangat-seluruh-tugas-sekolah-selalu-dikerjakan-sehingga-andi-tidak-pernah-ditegur-guru-pada-akhir-semester-ni">
+                            15. Andi, seorang siswa yang rajin belajar. Andi bernagkat sekolah pagi-pagi dengan penuh semangat. Seluruh tugas sekolah selalu dikerjakan, sehingga Andi tidak pernah ditegur guru. Pada akhir semester nilai rapor pengetahuan Andi sangat baik dan nilai rapor sikap serta keterampilan Andi pun sangat baik. Makna yang dapat diperboleh dari wacana tersebut adalah ... 
+a. melaksanakan aturan dengan kesadaran
+b. perilaku andi dijadikan contoh teladan
+c. Andi orang yang rajin, baik dan pandai
+d. pentingya mengetahui kewajiban</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A</p><p><strong>Penjelasan:</strong></p><p>melaksanakan aturan dengan kesadaran </p><p>1.Seluruh tugas sekolah selalu di kerjakan</p><p>2.berngkat sekolah deng semangat</p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="soal-ujian-akhir-semester-pkn-sma-38-sebagai-warga-negara-yang-baik-kita-harus-berpartisipasi-aktif-dalam-kehidupan-bernegara-contohnya-adalah-%e2%80%a6-a-memperebutkan-kekuasaan-b-mengadopsi-b">
+                            16. Soal ujian akhir semester PKN SMA: 38. Sebagai warga Negara yang baik kita harus berpartisipasi aktif dalam kehidupan bernegara, contohnya adalah …
+ a. memperebutkan kekuasaan
+ b. mengadopsi budaya barat
+ c. aktif dalam perkelahian di sekolah
+ d. mengembangkan pendidikan politik
+ e. menghambat penyelesaian tugas</h2><br />
+                        <br />mengembangkan pendidikan politik<br />
+                                            <h2 class="ez-toc-section" id="21-contoh-kalimat-kritik-terhadap-karya-lukisan-yang-tepat-adalah%e2%80%a6a-siapa-saja-yang-melihat-lukisan-abstrak-ini-pasti-perutnya-mual-b-lukisan-abstrak-yang-dibuatnya-aneh-dan-tidak-indah-c">
+                            17. 21. Contoh kalimat kritik terhadap karya lukisan yang tepat adalah,…a. Siapa saja yang melihat lukisan abstrak ini pasti perutnya mual.b. Lukisan abstrak yang dibuatnya aneh dan tidak indah.c. Lukisan abstrak itu akan lebih indah, apabila komposisi warnanya gelapan .d. Perpaduan warna yang dibuat dalam lukisan itu sungguh menyakitkan mata.22. Contoh kslimat kritik terhadap sebuah puisi yang baik adalah,…a. Pilihan katanya bagus.b. Bahasa yang digunakan sangat indah.c. Isi puisi sulit dipahami.d. Puisi tersebut dikemas dengan rapi.23. Contoh kalimat pujian yang tepat adalah,…a. Kamu tidak sportif pantas lawanmu kalah.b. Kamu hanya beruntung, prestasimu biasa saja.c. Kamu layak mendapat juara berkat kerja kerasmu.d. Sebenarnya prestasimu bagus, kamu hanya butuh penyempurnaan.24. Setiap hari ayah pergi ke Jakarta untuk menghidupi anak dan istrinya.Kalimat tersebut menggunakan kata tugas,….a. Preposisi dan konjungsib. Partikelc. preposisid. akhiran25. Adikpun gembira karena dibelikan boneka yang diinginkannya .Kalimat tersebut menggunakan kata tugas,…a. Partikelb. Preposisic. konjungsid. kata depan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>21. c</p><p>22.b</p><p>23.c</p><p>24.----</p><p>25.----</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="a-analisis-kegunaan-kedua-bentuk-analisa-tersebut-b-buatlah-contoh-analisis-pesaingpemasok-jika-pemerintah-daerah-di-kotakabupaten-tempat-anda-tinggal-bermaksud-mendirikan-sebuah-hotel-yang-penge">
+                            18. a. Analisis kegunaan kedua bentuk analisa tersebut! b. Buatlah contoh analisis pesaing/pemasok jika Pemerintah Daerah di Kota/Kabupaten tempat anda tinggal bermaksud mendirikan sebuah hotel yang pengelolaannya dikerjasamakan dengan pihak swasta! 
+a. Dari studi kasus tersebut, mekanisme pemindahtanganan apa yang dilakukan oleh Provinsi 
+Semangat, kemukakan alasannya? 
+b. Kemukakan tata cara pemindahtanganan dengan mekanisme tersebut! 
+c. Selain tanah, jenis barang milik daerah apa saja yang dapat dilakukan dalam mekanisme 
+tersebut?
+Jasa mengerjakan tugas mhs UT semua makul Tuton dan tmk, di kerjain ulang agar terhindar dr kesamaan dan di cek plagiasi sampai 0% 
+jurusan hukum , guru, manajemen, ekonomi dll 
+Mengerjakan tugas akhir, skripsi , tesis dll japri aja ya +62 819-1313-7142</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Jasa mengerjakan tugas mhs UT semua makul Tuton dan tmk, di kerjain ulang agar terhindar dr kesamaan dan di cek plagiasi sampai 0% </p><p>jurusan hukum , guru, manajemen, ekonomi dll </p><p>Mengerjakan tugas akhir , tesis dll  japri aja ya +62 819-1313-7142</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sejak-bulan-maret-2020-virus-corona-mulai-menyebar-di-kota-padang-bidang-pendidikan-ikut-mengalami-hambatan-siswa-diharuskan-belajar-di-rumah-dengan-sistem-daring-dan-luring-salma-seorang-anak-mad">
+                            19. Sejak bulan Maret 2020, virus corona mulai menyebar di kota Padang. Bidang pendidikan ikut mengalami hambatan. Siswa diharuskan belajar di rumah dengan sistem daring dan luring. Salma seorang anak Madrasah Tsanawiyah, tetap menyelesaikan tugas-tugasnya. Walapun dia tidak langsung berhadapan dengan gurunya. Salma yakin, virus corona yang menyerang kotanya, suatu saat akan berakhir. Perilaku Salma di atas merupakan contoh dari ?a. perilaku ikhlasb. perilaku sabarc. perilaku qana’ahd. perilaku tawakal​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c.perilaku qana'ah</p><p><strong>Penjelasan:</strong></p><p><strong>maaf</strong><strong> </strong><strong>kalo</strong><strong> </strong><strong>salah</strong><strong> </strong></p><p><strong>dan </strong><strong>semoga</strong><strong> </strong><strong>membantu</strong></p><br />
+                                            <h2 class="ez-toc-section" id="hukum-dasar-baik-yang-tertulis-maupun-yang-tidak-tertulis-wajib-ditaati-oleh-seluruh-warga-negara-adapun-contoh-hukum-dasar-tidak-tertulis-yang-berlaku-dalam-kehidupan-bernegara-adalaha-pidato-pres">
+                            20. Hukum dasar baik yang tertulis maupun yang tidak tertulis wajib ditaati oleh seluruh warga negara. Adapun contoh hukum dasar tidak tertulis yang berlaku dalam kehidupan bernegara adalah
+a. pidato presiden pada awal masa jabatannya di depan sidang umum MPR untuk memberikan sambutan setelah pelantikan
+b. pidato presiden pada akhir masa jabatannya untuk mempertanggung jawabkan tugasnya selama lima tahun
+c. pidato presiden di depan sidang paripurna DPR untuk memperingati HUT kemerdekaan R,I
+d. pidato presiden di depan sidang paripurna DPR untuk menjawab pertanyaan yang diajukan DPR</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kalau nggak salah jawabannya adalah a</p><br />
+                                            <h2 class="ez-toc-section" id="5-siswa-membuat-pantun-denganaturan-sebagai-berikut-a-terdiri-dari-8-sampai-dengan-12suku-katab-1-bait-terdiri-dari-4-baris-berisisampiran-dan-isic-jenis-pantun-bebasd-pantun-asli-buatan-sendiri">
+                            21. 5. Siswa membuat pantun denganaturan sebagai berikut :a. Terdiri dari 8 sampai dengan 12suku katab. 1 bait terdiri dari 4 baris berisisampiran dan isiC. Jenis pantun bebasd. Pantun asli buatan sendiri dengantema pendidikane. Suku kata terakhir harus samaantara baris 1-3 dan 2-4Contoh:Luas padang rerumputan,Ada domba banyak delapan.Pendidikan ibarat jembatan,jembatan menuju masa depan.f. Cukup membuat 1 buah pantunsaja.2 Tugas Kegiatan DASCA DAT tolong di jawab ya teman² plis yang jawab aku kasi bintang 50 pantun tema pendidikan ya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pisau di dapur harus diasah</p><p>Supaya daging dapat dicacah</p><p>Belajar tanpa mengenal lelah</p><p>Niscaya nanti dapat faedah</p><p>selamat mengerjakan:)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fahmi-berseteru-dengan-aji-karena-saling-berbeda-pendapat-tentang-tugas-kelompok-drama-salah-satu-guru-datang-menyelesaikan-perselisihan-kedua-siswanya-itu-guru-tersebut-berusaha-memberikan-solusi-d">
+                            22. Fahmi berseteru dengan Aji karena saling berbeda pendapat tentang tugas kelompok drama. Salah satu guru datang menyelesaikan perselisihan kedua siswanya itu. Guru tersebut berusaha memberikan solusi dan menegur kedua siswanya agar konflik cepat selesai. Berdasarkan ilustrasi tersebut, proses penyelesaian konflik dilakukan melalui .....
+A. Arbitrasi
+B. Mediasi
+C. Ajudikasi
+D. Stalemate
+E. Kompromi
+Contoh Soal Ujian Akhir Sekolah PAT</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. Mediasi</p><p><strong>Penjelasan:</strong></p><p>Berdasarkan ilustrasi tersebut, proses penyelesaian konflik dilakukan melalui B. Mediasi.</p><p></p><p>Dalam mediasi, pihak ketiga yang netral atau mediator berperan dalam membantu para pihak yang berselisih mencapai kesepakatan yang saling menguntungkan. Mediator tersebut dapat menghadirkan pendapat-pendapat, saran, atau solusi yang objektif untuk membantu kedua siswa mencapai titik tengah atau kesepakatan yang dapat diterima oleh keduanya.</p><p></p><p>Dalam kasus ini, guru yang datang bertindak sebagai mediator yang berusaha memberikan solusi dan menegur kedua siswa agar konflik cepat selesai. Tujuan mediasi adalah menciptakan kesepakatan yang memuaskan kedua belah pihak dan menghindari perluasan konflik atau kerugian yang lebih besar.</p><p></p><p>Oleh karena itu, pilihan yang tepat adalah B. Mediasi.</p><br />
+                                            <h2 class="ez-toc-section" id="5-sifat-yang-mencerminkan-kedisiplinanadalah-a-terlambat-datang-kesekolahb-bangun-pagi-dan-merapikan-tempattidurc-mengerjakan-tugas-paling-akhird-membuang-sampah-sembarangan6-contoh-kewajiban">
+                            23. 5. Sifat yang mencerminkan kedisiplinanadalah....A. Terlambat datang kesekolahB. Bangun pagi dan merapikan tempattidurC. Mengerjakan tugas paling akhirD. Membuang sampah sembarangan6. Contoh kewajiban di. sekolah adalah....A. menerima dana bosB. mengikuti pelajaranC. meminta dana bosD. taat kepada guru dan kepala sekolah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>5. B. Bangun pagi dan merapikan tempat</p><p>tidur</p><p>6. D. taat kepada guru dan kepala sekolah</p><p><strong>Jawaban:</strong></p><p>5.B. Bangun pagi dan merapikan tempat</p><p>tidur.</p><p>6.B.mengikuti pelajaran</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="tugas-buatlah-contoh-kalimat-masing-2-kalimat-a-penggunaan-kalimat-perintahb-penggunaan-bentuk-pasifc-penggunaan-kriteriabatasand-penggunaan-kata-keterangan-adverbiae-menggunakan-kalimat">
+                            24. Tugas : Buatlah contoh kalimat (masing, 2 kalimat) :a. Penggunaan Kalimat Perintahb. Penggunaan Bentuk Pasifc. Penggunaan Kriteria/Batasand. Penggunaan Kata Keterangan (adverbia)e. Menggunakan Kalimat Saran/Laranganf. Menggunakan Kata Penghubung, Pelesapan, Kata Acuang. penggunaan Akhiran -i dan akhiran -katolong ya kak semua di kalimatin masing" 2 ya kak ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a - pia tolong ambilkan gelas </p><p>   - kerjakan tugas matematika halaman 2</p><p>g - ibu membeli</p><p>    - adik membuka</p><p></p><p><strong>Penjelasan:</strong></p><p>moga membantu </p><p>maaf. kalo.salah masih tahap.belajar</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="39-tang-bertugas-mengarahkan-dan-melatih-dalam-proses-latihan-teater-adalah-a-ketua-panitiad-aktorb-sutradarac-naskah40-latihan-terakhir-sebelum-pementasan-suatu-karya-seni-disebut-a-pra">
+                            25. .39. Tang bertugas mengarahkan dan melatih dalam proses latihan teater adalah ...A ketua panitiaD. aktorB. sutradaraC. naskah40. Latihan terakhir sebelum pementasan suatu karya seni disebut.....A. pra-latihanB. gladi bersih C.gladi kotorD. bloking1. Tuliskan pengertian komik !2. Tuliskan penegertian cetak saring!3. Tuliskan contoh alat musik !a. Ritmisb. Melodisc. Harmonis4. Tuliskan unsur-unsur pendukung tari adalah !5. Jelaskan teknik merancang properti untuk pementasan pantomim !​</h2><br />
+                        39. B. Sutradara<br />40. B. Gladi bersih<br />
+                                            <h2 class="ez-toc-section" id="6-perhatikan-ilustrasi-berikutsaat-jam-istirahat-karim-membeli-makanan-di-kantin-sekolah-usai-membayar-karinsegera-kembali-ke-kelas-tanpa-menghitung-uang-kembalian-dari-petugas-kantin-tibadkelas">
+                            26. 6. perhatikan ilustrasi berikut!Saat jam istirahat Karim membeli makanan di kantin sekolah. Usai membayar Karinsegera kembali ke kelas, tanpa menghitung uang kembalian dari petugas kantin. Tibadkelas Karim memeriksa uang kembalian, ternyata lebih dan terlalu banyak. Maka Karinsegera kembali ke kantin untuk mengembalikan kelebihan uang kepada petugas kantin.Perilaku Karim mencerminkan perilaku terpuji yaitu...و ولاتن فولادوعددراغون"A sabarB. JujurC. qana'ahD. IstiqamahoAyat di atas menjelaskan perilaku orang-orang yang memiliki sifat ....AsantunB. PemaluC. amanahD. Istiqamah8. Perhatikan pernyataan berikut:1. Fajar melaksanakan tugas sebagai ketua kelas dengan penuh tanggung jawab2. Gulam selalu bertahajjud secara kontinu setiap sepertiga malam terakhir3. Anis tidak meminta upah ketika diminta ibu membeli beras di toko4. Masliana selalu berkata yang sebenarnya saat menjadi saksi di pengadilanPemyataan di atas yang termasuk contoh perilaku Amanah dilakukan olehA FajarB. GulamC. AnisD. Masliana​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>6.B jujur</p><p>7.A santun</p><p>8.A Fajar</p><br />
+                                            <h2 class="ez-toc-section" id="islam-memerintahkan-umatnya-untuk-kerja-keras-dan-bertanggung-jawab-dalam-rangka-memenuhi-kebutuhan-hidupnya-dan-menjaga-keberlangsungan-hidup-manusia-berikut-merupakan-contoh-perilaku-kerja-keras-ya">
+                            27. Islam memerintahkan umatnya untuk kerja keras dan bertanggung jawab dalam rangka memenuhi kebutuhan hidupnya dan menjaga keberlangsungan hidup manusia. Berikut merupakan contoh perilaku kerja keras yakni ... A mengerjakan pekerjaan B mengerjakan tugas sekolah saat waktunya sudah hampir berakhir C bekerja tidak mengenal waktu dan istirahat D bekerja untuk meningkatkan kesejahteraan E bersungguh-sungguh dalam berusaha agar meraih sukses​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>E. bersungguh-sungguh dalam berusaha agar meraih sukses</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah jawabannya</p><p><strong>Jawaban:</strong></p><p>D.bekerja untuk menikankan kesejahteraan</p><br />
+                                            <h2 class="ez-toc-section" id="yang-disifatkelasiii-tigapilihan-gandaberilah-tanda-silang-x-pada-huruf-di-depan-jawaban-yang-paling-benkd-3-210-toni-selalbelajar-dengan-giat-merupakan-contohtoni-memtanggung-jawab-kepadaa-so">
+                            28. yang disifatKelasIII (Tiga)PILIHAN GANDABerilah tanda silang ( x ) pada huruf di depan jawaban yang paling benKD.3.210. Toni selalBelajar dengan giat merupakan contohToni memtanggung jawab kepadaa. sombona. Allah Swtc. diri sendinb. bijaksab. orang tuad. lingkunganKD. 3.102. Bersungguh-sungguh dalam melaksanakan 11. Pengertiatugas danbersedia menerima segala resiko atauakibat dari perbuatannya merupakan arti daridiakhira. sujuda. tawadukc. rendah hatib. salamb. rendah dirid. tanggung jawab123. Melaksanakan ibadah dengan sebaik-baiknyamerupakan contoh tanggung jawab kepadaa. Allah Swtc. diri sendirib. orang tuad. lingkungan4. Berbakti, taat dan patuh serta bersikap santuncontoh tanggung jawab kepada13. Geraka. Allah Swtc. diri sendiria. kirib. orang tuad. lingkunganb. kar5. Sakdiah selalu bersungguh-sungguh dalam 14. Sholamengerjakan tugas.Perbuatan Sakdiah termasuk ....a. sabarc. percaya dirib.mb. pedulid. tanggung jawab15. GeraKD. 3.5a. la5. Banyak sekali sifat terpuji salah satunya adalahb.besikap rendah hati, nama lain dari sikap rendah KD. 3.1hati adalah ...16. Nata. tawakalc. tawadukberh tawauton​</h2><br />
+                        <p>jawaban</p><p>1.C</p><p>2.D</p><p>3.A</p><p></p><p><strong>Penjelasan:</strong></p><p>segitu doang maaf</p><br />
+                                            <h2 class="ez-toc-section" id="gagasan-pokok-ialah-utama-yang-dibahas-dalam-suatu-bacaan-a-ide-b-tugas-c-manfaat-d-pendukungcontoh-tanggapan-yang-positif-berkaitan-dengan-budaya-khas-di-indonesia-adalah-5-poina">
+                            29. Gagasan pokok ialah .... utama yang dibahas dalam suatu bacaan. A. ide B. tugas C. manfaat D. pendukungContoh tanggapan yang positif  berkaitan dengan budaya  khas di Indonesia adalah ......(5 Poin)a. Melihat pertujukan tarian daerahb. Tarian saman sangat menarik dan enerjikc. Menurutsaya musik daerah kurang menarikd. Aku suka tarian dari luar negeriIde pokok paragraf kedua ada pada ....(5 Poin)a. awal paragrafb. tengah paragrafc. akhir paragrafd. awal dan akhir paragrafKegiatan yang sesuai atau terkait dengan gambar tersebut adalah ....(5 Poin)a. bermain-main air dengan adikb. membersihkan kamar mandic. menguras bak mandid. menggunakan air secukupnya saat mandi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.A</p><p>2.B</p><p>3.D</p><p>4.D</p><p>Maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="dosen-menugaskan-anda-mengerjakan-tugas-akhir-dengan-judul-%e2%80%9dhubungan-tingkat-ekonomi-kotaterhadap-tingkat-ketahanan-kota-dalam-menghadapi-pandemi-diketahui-kedua-variabel-yangdigunakan-adal">
+                            30. Dosen menugaskan Anda mengerjakan tugas akhir dengan judul ”Hubungan Tingkat Ekonomi Kota
+terhadap Tingkat Ketahanan Kota dalam Menghadapi Pandemi. Diketahui kedua variabel yang
+digunakan adalah interval/rasio.
+Berdasarkan contoh kasus penelitian di atas maka:
+a. Tentukanlah metode analisis apa yang tepat!
+b. Tentukanlah langkah-langkah dalam menganalisis!
+c. Tentukanlah perkiraan hasil analisis tersebut!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Metode analisis yang tepat untuk menganalisis hubungan antara tingkat ekonomi kota dan tingkat ketahanan kota dalam menghadapi pandemi adalah analisis korelasi. Karena kedua variabel tersebut merupakan variabel interval/rasio, maka metode yang tepat untuk menganalisis hubungan antara kedua variabel tersebut adalah Pearson's Correlation Coefficient atau Spearman's Correlation Coefficient.</p><p></p><p>b. Langkah-langkah dalam menganalisis hubungan antara tingkat ekonomi kota dan tingkat ketahanan kota dalam menghadapi pandemi adalah sebagai berikut:</p><p></p><p>1. Tentukan populasi dan sampel penelitian.</p><p>2. Tentukan skala pengukuran untuk kedua variabel.</p><p>3. Tentukan cara pengumpulan data yang tepat.</p><p>4  Kumpulkan data dari populasi atau sampel yang telah ditentukan.</p><p>5. Hitung Pearson's Correlation Coefficient atau Spearman's Correlation Coefficient tergantung pada distribusi data.</p><p>6. Tentukan apakah terdapat hubungan positif, hubungan negatif, atau tidak ada hubungan antara kedua variabel tersebut.</p><p></p><p>c. Perkiraan hasil analisis tergantung pada hasil perhitungan Pearson's Correlation Coefficient atau Spearman's Correlation Coefficient. Jika hasil perhitungan menunjukkan adanya hubungan positif antara kedua variabel, maka dapat diasumsikan bahwa semakin tinggi tingkat ekonomi kota, semakin tinggi pula tingkat ketahanan kota dalam menghadapi pandemi. Sebaliknya, jika hasil perhitungan menunjukkan adanya hubungan negatif antara kedua variabel, maka dapat diasumsikan bahwa semakin tinggi tingkat ekonomi kota, semakin rendah pula tingkat ketahanan kota dalam menghadapi pandemi. Jika hasil perhitungan menunjukkan tidak ada hubungan antara kedua variabel, maka dapat diasumsikan bahwa tingkat ekonomi kota tidak mempengaruhi tingkat ketahanan kota dalam menghadapi pandemi.</p><p></p><p>Hallo kaka mau di bantu jawabnya bisa menghubungi no kami +62 821-2652-6626</p><br />
+                                            <h2 class="ez-toc-section" id="di-bawah-ini-merupakan-contoh-interaksi-antara-kelompok-dengan-kelompok-kecuali-a-pertandingan-sepak-bola-antara-indonesia-melawan-malaysia-b-menyaksikan-konser-musik-dilapangan-bersama-dengan-teman-c">
+                            31. Di bawah ini merupakan contoh interaksi antara kelompok dengan kelompok kecuali A pertandingan sepak bola antara indonesia melawan malaysia B menyaksikan konser musik dilapangan bersama dengan teman C ibu sedang membantu adik mengerjakan tugas sekolah D pertandingan bola voli antaf sekolah dasar TOLONG DI JAWAB YA AKU LAGI ULANGAN AKHIR SEMESTER 1 PLISS</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C ibu sedang membantu adik mengerjakan tugas sekolah </p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-pilihlah-jawaban-yang-tepatteks-puisi-berikut-untuk-soal-nomor-1-3dengan-seragam-oranye-kebanggaanmenyusuri-setiap-tujuanmeski-panas-bahkan-hujandengan-tulus-kauantarkandan-senyum-yang-mengiringi">
+                            32. A. Pilihlah jawaban yang tepat!Teks puisi berikut untuk soal nomor 1-3!Dengan seragam oranye kebanggaanMenyusuri setiap tujuanMeski panas bahkan hujanDengan tulus kauantarkanDan senyum yang mengiringiMengusir sakit tubuh ini4.Puisi tersebut menggambarkan profesi5.a.6.Surat yang mereka nantikan1. Pilihan yang untuk melengkapi puisitersebut adalahDengan senyum kauberikanb. Tetap menjalankan tugasC. Demi orang yang menantid. Memberikan kebahagiaan2. Judul yang sesuai untuk puisi tersebutadalah ...a. "Surat"C. "Tugas Muliab. "Pak Pos d. "Tukang Antar3. Bunyi rima akhir larik pertama dankedua adalah ....an-anC. a-anb. an-kand. kan-anPenggalan puisi berikut untuk nomor 4 dan 5!Ketulusan hati yang mengobatiDengan tangan yang mengayomia. gurudokterb.petanid. polisiRima akhir larik ketiga dan keempatpuisi tersebut adalah ..ti-mii-nib. mi-id.Agung tinggal di kawasan pesisir pantai.Contoh makhluk hidup yang menjadipenghuni kawasan tersebut adalaha. bakau dan harimaub. kelapa dan anggrekC kerang dan rumput lautd. rumput laut dan gajahPerhatikan gambar berikut.7.Untuk menghasilkan buah tersebut,tanaman mangga harus mencapaitahapa. bijib. tunasc. mudad. dewasa​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>no 7 d dewasa maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="1-jenis-museum-berdasarkan-koleksi-yang-dimilikinya-dibedakan-menjadi-dua-jenis-yaitu-museum-umum-dan-museum-khusus-kutipan-teks-diatas-merupakan-contoh-kalimat-a-utamab-istilah-c-definisi-d-k">
+                            33. 1. Jenis museum berdasarkan koleksi yang dimilikinya dibedakan menjadi dua jenis yaitu museum umum dan museum khusus.Kutipan teks diatas merupakan contoh kalimat... A. UtamaB. Istilah C. Definisi D. Klasifikasi 2. Penggunaan kata baku yang tepat adalah... A. Obat yang terjamin sebaiknya dibeli di apotikB. Kualitas bibit bunga ini dapat dipertanggungjawabkan C. Dahulu kala bangunan mesjid di daerah ini belum terlalu banyakD. Gimana ya, kakak nggak mungkin ikut, hari ini banyak banget tugas3. Penggunaan kata tidak baku terdapat pada kalimat.. A.  Saya memiliki banyak aktivitas di sekolahB. Kegiatan seminar literasi akan diadakan bulan November C. Kakakku bercita cita menjadi atlet sepak bola profesional D. Penumpang mengantri di loket stasiun untuk membeli tiket kereta 4. Akhiran-akhiran dibawah ini berasal dari bahasa Arab kecuali... A. - iB. - iahC. - wiD. - isme5. Akhiran -man, -wan, dan -wati merupakan imbuhan asing yg berasal dari bahasa.. A. ArabB. Inggris C. SansekertaD. Belanda6. Kalimat yang tidak menggunakan imbuhan asing adalah... A. Anak itu mempunyai bakat alami. dimulai. B. Paman dikabari bahwa kakek sedang sakit. rasa. C. Program modernasi desa telah lamaD. Karyawan pabrik gula mengadakan unjuk</h2><br />
+                        1. D<br />2. B<br />3. D<br />4. D<br />5. C<br />6. B<br />
+                                            <h2 class="ez-toc-section" id="info-gugus-tugas-penangan-covid-19-menyatakan-bahwa-banyak-dari-kalangan-dokter-dan-perawat-yang-gugur-meninggal-dalam-melaksanakan-tugasnya-untuk-penanganan-dan-perawatan-penderita-positif-covid">
+                            34. Info gugus tugas penangan Covid-19 menyatakan bahwa banyak dari kalangan dokter dan perawat 
+yang gugur (meninggal) dalam melaksanakan tugasnya untuk penanganan dan perawatan penderita 
+positif covid-19. Hal ini juga disampaikan kepada masyarakat agar selalu menjaga kesehatan dan 
+mengikuti protokol kesehatan dimanapun berada, diantaranya yaitu; menggunakan masker saat 
+berpergian dan juga mencuci tangan setiap sebelum dan sesudah beraktifitas. Dan diakhir 
+informasinya gugus tugas penanganan Covid-19 berharap agar kita selalu berdo’a kepada Tuhan 
+Yang Maha Esa agar pandemic ini cepat berlalu. Dari narasi singkat diatas menunjukkan contoh 
+kiamat . . .
+a. Sugra
+b. Kubra
+c. Surga
+d. Kuba</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a.sugra </p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="c-78410-perhatikan-keterangan-berikut1-kemampuan-memfokuskan-masalah-untukditelaah-secara-mendalam-2-kecakapan-melacak-dan-menelusurikebenaran-suatu-data-penelitian-keahlian-mengartikulasikan-ga">
+                            35. c. 78,410. Perhatikan keterangan berikut!1) Kemampuan memfokuskan masalah untukditelaah secara mendalam.2) Kecakapan melacak dan menelusurikebenaran suatu data penelitian.Keahlian mengartikulasikan gagasan ke-dalam kalimat deskriptif.4) Kemampuan menguasai formula statistikuntuk mengolah data.5) Kemampuan menyusun kata dalam kalimatpertanyaan angket.Kemampuan yang harus dimiliki peneliti padasaat mengolah data kualitatif ditunjukkan olehangka ...a. 1), 2), dan 3)b. 1), 2), dan 4)c. 1), 2), dan 5)d. 2), 4), dan 5)e. 2), 3), dan 5)11. Pada laporan penelitian sosial sementara penelitibelum bisa memberikan keputusan final ataukesimpulan. Penarikan kesimpulan belum bisadilakukan oleh peneliti karenaa. batas waktu penelitian yang tidak panjangb. laporan sementara hanya sebagai formalitasc. data yang terkumpul masih belum lengkapd. narasumber yang tersedia kurang kompetenlaporan sementara seharusnya tidak memuatkesimpulan12. Contoh laporan penelitian formal yang tepatditunjukkan oleh pilihan yaitu ....a. skripsi, tesis, dan artikelb. skripsi, disertasi, dan makalahc. monografi, makalah, dan majalahd. jurnal ilmiah, tugas akhir, dan disertasie. jurnal ilmiah, makalah, dan tugas akhire.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a.skripsi,tesis,dan artikel</p><br />
+                                            <h2 class="ez-toc-section" id="tugasberdasarkan-teks-prosedur-mie-goreng-telur-puyuh-tentukanlah-hal-hal-sebagaiberikut1-a-bahan-bahan-bumbu-halus-dan-taburan-termasuk-struktur-teks-prosedurberupab-cara-membuat-dalam-teks-t">
+                            36. Tugas:Berdasarkan teks Prosedur Mie goreng telur puyuh, tentukanlah hal-hal sebagaiberikut:1. a. Bahan-bahan, bumbu halus, dan taburan termasuk struktur teks prosedurberupab. Cara membuat dalam teks tersebut termasuk struktur teks prosedur bagian...c. Adakah bagian penutup dalm teks tersebut? Tuliskan!2. Tulislah bagian penutup teks prosedur3.4. Tuliskan masing-masing satu contoh kalimat yang berupa :a. Kalimat keterangan akibatb. Kalimat perintahc. Kalimat menyatakan waktu.d. Kalimat yang menggunakan akhiran-i dan kan.Tolong dibantu ya kak​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>bahan-bahan bumbu halus dan taburan termasuk struktur teks prosedur berupa </p><br />
+                                            <h2 class="ez-toc-section" id="7-akhir-akhir-ini-wabah-flu-burung-mulai-merebak-lagi-penyebab-penyakit-ini-dipelajari-dalam-cabang-biologi-disebut-a-virologib-bakteriologic-parasitologid-embriologie-mikribiologi12-bi">
+                            37. 7. Akhir-akhir ini, wabah flu burung mulai merebak lagi. Penyebab penyakit ini dipelajari dalam cabang biologi disebut ......a. virologib. bakteriologic. parasitologid. embriologie. mikribiologi12. Biologi dimanfaatkan dalam bidang kedokteran. Salah satunya adalah transplantasijantung, mata, ataupun ginjal. Mata pada organisasi kehidupan, termasuk ....a. selb. organc. sistem organd. molekule. individu8. Struktur organisasi kehidupan yang paling kecil adalah ....a. populasib.organc. molekuld. sele. bioma9. Pernyataan yang tidak tepat tentang struktur organisasi kehidupan adalah kumpulan.....a. Sel membentuk jaringan.b. Organ membentuk individu.c. Jaringan membentuk organ.d. Individu membentuk populasi.e. ekosistem membentuk bioma10. Berikut ini yang merupakan contoh organisme tingkat jaringan adalah ....a. virusb. cacing tanahc. semutd. poriferae. kucing11. Koloni rayap terdiri atas bermacam-macam individu. Masing-masing mempunyai tugas tertentu. Di alam, koloni rayap tersebut merupakan suatu .a. komunitasb. populasic.  biomad. individue. ekosistem​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>7. a. virologi</p><p>12. b. organ</p><p>8. d. sel</p><p>9. b. organ membentuk individu</p><p>10. a. virus</p><p>11. b. popolulasi</p><br />
+                                            <h2 class="ez-toc-section" id="merupakan-salah-satu-contoh-masalah-sosialpenyebab-terjadinya-kemacetan-lalu-lintasberdasarkan-sumber-daya-alam-yang-ada-di-lingkunganosseda-kompetensi-dasar-3-1-dan-4-1media-kering-untuk-m">
+                            38. merupakan salah satu contoh masalah sosialpenyebab terjadinya kemacetan lalu lintas!berdasarkan sumber daya alam yang ada di lingkungan?osSeda&gt;&gt; Kompetensi Dasar: 3.1 dan 4.1Media kering untuk menggambar cerita adalahcat airtinta bakC.Buyung mendapat tugas untuk menggambar cerita mengenai banjir. Kemudiaiamenggunakan bolpoin untuk menggambar cerita tersebut. Gambar Buyakan menghasilkan karakter ... pada garis-garis.a. tegasb. lemahc. halusd. indahLangkah terakhir membuat gambar cerita adalahenentukan temaSebutkan dua (2) hal yang dapat dilakukan untuk meningkatkan exone​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C=b</p><p><strong>Penjelasan:</strong></p><p>yang C jawabannya B yaitu lemah </p><p></p><p>'maaf kalo salah'</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-bantu-jawab-aku-kesusahan-buat-tugas-ini-tugas-bahasa-lampung-kelas-4-sdpertanyaan1-setelah-anda-identifikasi-apakah-kata-dasar-dan-kata-berimbuhan-itu-pertanyaan2-apakah-kata-dasarnya">
+                            39. tolong bantu jawab  aku kesusahan buat tugas ini.. tugas bahasa lampung kelas 4 sdpertanyaan1. setelah anda identifikasi, apakah kata dasar dan kata berimbuhan itu ?pertanyaan2. apakah kata dasarnya, setelah imbuhannya dilepaskan pada kata-kata berikut! a. Ngeguwaib. Ngukurc. Ngawild. Nyuduie. Nuwilpertanyaan3. Tunjukan dengan contoh awalan nya/nye merupakan variasi awalan nga/nge !pertanyaan4. Tunjukan imbuhan berupa awalan ni/ne (A) atau no dan ke-3 fungsinya ! pertanyaan5. Tunjukkan penggunaan imbuhan berupa awalan atau akhiran dalam kalimat yang berikut ! a. (A) ya (akuk) buku (O) Yo (akuk) bukeub. Tiyan lagi (subuk) Tiyan lagei (subuk) c. (Ghupa) kawaghi sai ghatong(Upono) temui sai megeghudah itu aja ka..​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>2.c.Ngawil</p><p>5.b. Tiyan lagi (subuk) </p><p>Tiyan lagei (subuk) </p><br />
+                                            <h2 class="ez-toc-section" id="1-pernyataan-yang-tepat-terkait-kandungan-q-s-al-hajj-ayat-7-adalah-a-hari-akhir-pasti-akan-datang-b-manusia-akan-binasa-pada-hari-akhir-c-alam-semesta-akan-hancur-berkeping-keping-d-hanya">
+                            40. 1. Pernyataan yang tepat terkait kandungan Q.S. al-Hajj ayat 7 adalah .... A. Hari akhir pasti akan datang B. Manusia akan binasa pada hari akhir C. Alam semesta akan hancur berkeping-keping D. Hanya Allah SWT yang mengetahui hari akhir 2. Peristiwa setelah hari akhir yang dijelaskan dalam ayat tersebut yaitu hari .... A. Penantian B. Perhitungan C. Kebangkitan D. Penimbangan 3. Perhatikan ayat berikut! كل نبس ذاءقة الموت Kullu nafsin dzaaiqotul mauut Ayat tersebut menjelaskan contoh kiamat sughra yang berupa ... A. Banjir B. Kematian C. gempa D. Longsor 4. Malaikat Israfil bertugas meniup sangkakala, tiupan sangkakala pertama menjadi tanda ..... A. Datangnya kiamat sughra B. Munculnya Dajjal al-Masih C. Munculnya dibangkitkan dari kubur D. Hancurnya seluruh alam semesta 5. Seluruh manusia akan dikumpulkan di Padang Mahsyar. Peristiwa yang dialami manusia saat itu yaitu ... A. Dihitung amal perbuatannya B. Menanti kedatangan hari akhirC. Ditimbang amal baik dan buruknya D. Menanti pengadilan dari Allah SWT 6. Perhatikan kutipan hadits berikut! ومن اراه د الآخرة فعليه بالعلم Wamanaroodal aakhiroti fha'alaihi bil'ilmi Sikap muslim yang menginginkan kebahagiaan akhirat yaitu .... A. Menaati perintah guru B. Menghormati kedua orang tua C. Melaksanakan sholat D. Menuntut ilmu dengan sungguh-sungguh 7. Perilaku mawas dari yang mencerminkan iman pada hari akhir ditunjukkan dengan.... A. Menyembunyikan permasalahan yang dimiliki B. Menolak bantuan yang diberikan orang lain C. Berbicara dengan sopan D. Tidak memercayai perkataan orang lain 8. Perilaku Ihsan Hakiki yang menunjukkan perilaku beriman pada hari akhir saat mengikuti ulangan bahasa Inggris dengan ..... A. Meninggalkan ruang ujian B. Menundukkan nafsu buruk yang dimiliki C. Meminta izin kepada guru untuk keluar D. Meminta izin mengikuti ujian pada hari lain 9. Perhatikan ayat berikut! يوم يكو ن أن الناس كاالفراش المبثوث Yaumayakuu nunnaasu kalfharoosyilmabtsuuts Ayat tersebut menjelaskan... A. Bumi diguncangkan dengan dahsyat B.manusia seperti laron yang beterbangan C. Gunung-gunung seperti bulu yang dihambur-hamburkan D. Bumi mengeluarkan beban-beban berat yang dikandungnya 10. Hikmah beriman pada hari akhir yang dirasakan oleh Fauzan Akbari dengan melaksanakan sholat adalah ... A. Meningkatkan semangat beribadah B. Menumbuhkan sikap peduli C. Memperoleh ketenangan hidup D. Memperoleh pertolongan Allah SWT​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. a</p><p>2. c</p><p>3. b</p><p>4. b</p><p>5. d</p><p>6. c</p><p>7. c</p><p>8. d</p><p>9. b</p><p>10. d</p><p></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ips</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/ap-fungsi-dari-http-www-w3-org-1999-xhtml.html">Ap Fungsi Dari Http Www w3 org 1999 Xhtml</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-ketaksamaan-cauchy-schwarz.html">Contoh Soal Ketaksamaan Cauchy Schwarz</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-isolator-tumpu-dengan-isolator-tarik.html">Fungsi Dari Isolator Tumpu Dengan Isolator Tarik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-dan-jawaban-hukum-newton-1.html">Contoh Soal Dan Jawaban Hukum Newton 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-there-is-thre-are.html">Fungsi Dari There Is Thre Are</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/apa-fungsi-dari-unsur-tekstur.html">Apa Fungsi Dari Unsur Tekstur</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-tombol-home-pada-keyboard.html">Fungsi Tombol Home Pada Keyboard</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-sma.html">Contoh Soal Sma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-matematika-kelas-2-tema-3.html">Contoh Soal Matematika Kelas 2 Tema 3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/melaksanakan-tugas.html">Melaksanakan Tugas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/fungsi-dari-transfer-queue-transfer-antrian.html">Fungsi Dari Transfer Queue Transfer Antrian</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/cara-belajar-psikotes.html">Cara Belajar Psikotes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-spltv-substitusi.html">Contoh Soal Spltv Substitusi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-toeic-dan-pembahasannya-2019.html">Contoh Soal Toeic Dan Pembahasannya 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-dan-jawaban-sistem-persamaan-linear-dua-variabel.html">Contoh Soal Dan Jawaban Sistem Persamaan Linear Dua Variabel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-menghitung-laba-kotor.html">Contoh Soal Menghitung Laba Kotor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-vocab-matching.html">Contoh Soal Vocab Matching</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/huruf-di-keyboard.html">Huruf Di Keyboard</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/energi-dari-gas-ideal-merupakan-fungsi-dari.html">Energi Dari Gas Ideal Merupakan Fungsi Dari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://butirsoal.github.io/contoh-soal-bentuk-akar-dan-jawabannya.html">Contoh Soal Bentuk Akar Dan Jawabannya</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://butirsoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://butirsoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://butirsoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://butirsoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://butirsoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
